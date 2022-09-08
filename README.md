@@ -1,6 +1,4 @@
-### Hi 🚀
-
-> 🌱 I’m looking to collaborate on [IconPub](https://icons.pub), [Netron](https://github.com/guocaoyi/netron)
+> 🌱 Hi! I’m looking to collaborate on [IconPub](https://icons.pub), [Netron](https://github.com/guocaoyi/netron)
 
 <div>
   <a href="https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only">
