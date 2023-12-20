@@ -36,7 +36,7 @@ tags:
 
 - 简单聊聊 JavaScript 这门语言？
   - `#了解#`
-  1. 「M」在实现层面：分为语言标准（ECMAScript 是语言标准，JavaScript 只是标准的实现）+ 语言宿主环境（对象模型、WebAPI、Node Api、WX）；
+  1. 「M」在实现层面：分为语言标准（ECMAScript 是语言标准，JavaScript 只是标准的实现）+ 语言宿主环境（对象模型、WebAPI、Node Api、WX）；
   2. 「S」语言标准提供语法、词法、基本类型、表达式、语句等；宿主环境提供内置对象、标准模块；
   3. 「P」语法借鉴 C & Java、数据结构借鉴 Java、原型借鉴 Self、函数用法借鉴 Schema、正则借鉴 Perl ；
 - JavaScript 中有那些常见的内置对象，由谁提供?
