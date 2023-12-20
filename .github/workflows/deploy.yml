@@ -11,7 +11,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -23,35 +23,24 @@ concurrency:
 
 jobs:
   # Build job
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Install Dependencies
-        run: |
-          npm install
-          npm install hexo-cli -g
-      - name: Build Hexo Site
-        run: |
-          hexo generate
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public/
 
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Install and build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.HEXO_TOKEN }}
+          branch: main
+          folder: public # The folder the action should deploy.
+          clean: true
+          clean-exclude: |
+            public/CNAME
+          ssh-key: ${{ secrets.PAGES_DEPLOY_KEY_PRI }}
+          silent: true

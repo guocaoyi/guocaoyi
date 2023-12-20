@@ -1,6 +1,8 @@
 .DS_Store
-# CNAME
-
 node_modules
-/public
+
+/public/**
+!/public/CNAME
+!**/CNAME
+
 db.json

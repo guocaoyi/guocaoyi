@@ -36,9 +36,7 @@ auto_excerpt:
 enable: true
 length: 10
 
-# Analytics (change to yours)
-google_analytics:
+# 百度统计
+baidu:
   enable: true
-  siteid: UA-70812759-1
-# search
-#swiftype_key: ZP2ZSuHgipSZfRyU8uTR
+  siteid: b6ea6ca0c389aa294890b81f26dcc186
