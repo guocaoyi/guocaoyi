@@ -22,8 +22,7 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
-          ssh-key: ${{ secrets.PAGES_PUB }}
-          token: ${{ secrets.PAGES_PUB }}
+          ssh-key: ${{ secrets.PAGES_DEPLOY_PUB }}
           branch: main
           folder: public # The folder the action should deploy.
           clean: true
