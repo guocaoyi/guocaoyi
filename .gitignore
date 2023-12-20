@@ -1,8 +1,8 @@
 .DS_Store
-CNAME
+# CNAME
 
 node_modules
 public
-#docs
+# docs
 
-db.json
+# db.json
