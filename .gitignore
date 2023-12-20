@@ -1,0 +1,8 @@
+.DS_Store
+CNAME
+
+node_modules
+public
+#docs
+
+db.json

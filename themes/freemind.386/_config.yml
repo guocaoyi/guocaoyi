@@ -1,0 +1,44 @@
+slogan: 'Do not panic!'
+
+show_heart: true
+
+show_slogan: true
+
+menu:
+  - title: Archives
+    url: archives
+    intro: 'All the articles.'
+  - title: Tags
+    url: tags
+    intro: 'All the tags.'
+  - title: About
+    url: about
+    intro: 'About me.'
+
+links:
+  - title: X(Twitter)
+    url: https://x.com/without_horn
+    intro: "Yalda's X repository."
+    icon: 'fa fa-twitter'
+  - title: 'Github'
+    url: http://www.github.com/oneoverzero
+    intro: 'My Github account.'
+    icon: 'fa fa-github'
+
+widgets:
+  - search
+  - category
+  - tagcloud
+  - recent_posts
+  - links
+
+auto_excerpt:
+enable: true
+length: 10
+
+# Analytics (change to yours)
+google_analytics:
+  enable: true
+  siteid: UA-70812759-1
+# search
+#swiftype_key: ZP2ZSuHgipSZfRyU8uTR
