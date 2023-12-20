@@ -3,5 +3,4 @@
 
 node_modules
 /public
-!/public/CNAME
 db.json
