@@ -1,8 +1,0 @@
-.DS_Store
-node_modules
-
-/public/**
-!/public/CNAME
-!**/CNAME
-
-db.json
