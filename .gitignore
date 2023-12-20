@@ -2,6 +2,6 @@
 # CNAME
 
 node_modules
-public
-!public/CNAME
+/public
+!/public/CNAME
 db.json
