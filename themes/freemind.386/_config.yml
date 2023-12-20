@@ -21,7 +21,7 @@ links:
     intro: "Yalda's X repository."
     icon: 'fa fa-twitter'
   - title: 'Github'
-    url: http://www.github.com/oneoverzero
+    url: http://www.github.com/guocaoyi
     intro: 'My Github account.'
     icon: 'fa fa-github'
 
@@ -32,11 +32,11 @@ widgets:
   - recent_posts
   - links
 
-auto_excerpt:
-enable: true
-length: 10
-
 # 百度统计
 baidu:
   enable: true
   siteid: b6ea6ca0c389aa294890b81f26dcc186
+
+google_analytics:
+  enable: true
+  siteid: G-RGH70FJBTF

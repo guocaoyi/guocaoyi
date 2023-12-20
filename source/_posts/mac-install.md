@@ -5,6 +5,7 @@ date: 2022-02-20 12:49:06
 tags:
   - article
   - os
+auther: guocaoyi
 ---
 
 # MacOS 装机 v1.0
