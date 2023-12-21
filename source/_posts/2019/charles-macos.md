@@ -25,6 +25,8 @@ brew install --cask charles
 - 桌面端应用（浏览器或者客户端）
 - 移动端设备 & 应用
 
+<!-- more -->
+
 ## Mac 应用设置步骤
 
 - 1. 证书下载

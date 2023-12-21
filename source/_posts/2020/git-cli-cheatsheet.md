@@ -28,6 +28,8 @@ Git的设置文件为.gitconfig
 > 它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）
 > 全局配置: `~/.gitconfig` ，项目配置: `$/.git/config`
 
+<!-- more -->
+
 ```bash
 # 显示当前的Git配置
 $ git config --list

@@ -22,6 +22,8 @@ class User(val name: String, val age: Int)
 val user = User("yalda", 31)
 ```
 
+<!-- more -->
+
 ```java
 public class User {
 	private String name;

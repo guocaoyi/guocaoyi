@@ -11,6 +11,8 @@ tags:
 
 `command + p` > `shell command` 开始 `code` 命令行
 
+<!-- more -->
+
 ```bash
 # 多行转一行(折叠：改变代码结构)
 Ctrl + J

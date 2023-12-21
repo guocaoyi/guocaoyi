@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 《Swift 核心技术与实现》— 01.语言基础
+title: 《Swift 核心技术与实现》语言基础
 date: 2022-01-15
 tags:
   - lang/swift
@@ -30,6 +30,8 @@ Swift3
 - sequence
 - 权限控制 fileprivate \ open （open > public > fileprivate > private）
 - 废弃（++ 、- -）
+
+<!-- more -->
 
 Swift4
 

@@ -31,6 +31,8 @@ tags:
 └── Compile Time
 ```
 
+<!-- more -->
+
 - A Svelte Component for Preview
 
 ```tsx

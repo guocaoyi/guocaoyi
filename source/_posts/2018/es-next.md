@@ -28,6 +28,8 @@ tags:
 - SharedArrayBuffer 对象
 - Atomics 对象
 
+<!-- more -->
+
 ## ECMAScript 2018(ES9)
 
 - 异步迭代

@@ -23,6 +23,8 @@ ls # 显示当前目录的内容
 dircmp # 比较两个目录的内容
 ```
 
+<!-- more -->
+
 ## File Operation
 
 ```bash

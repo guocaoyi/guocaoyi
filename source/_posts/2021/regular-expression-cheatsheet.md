@@ -33,6 +33,8 @@ tags:
 \t\n\r  // tab, linefeed, carriage return
 ```
 
+<!-- more -->
+
 ## Groups & Lookaround
 
 ```

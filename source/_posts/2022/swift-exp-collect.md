@@ -33,6 +33,8 @@ Cannot assign value of type ‘(Int, String, String, String)’ to type
 */
 ```
 
+<!-- more -->
+
 - 类型推导 & 可选类型
 
 ```swift

@@ -29,6 +29,8 @@ auther: guocaoyi
   - Docker Hub
   - Package Manager（MVN、NPM、Inner Registry）
 
+<!-- more -->
+
 ## Reference
 
 1. 通用环境
