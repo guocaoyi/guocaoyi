@@ -6,18 +6,16 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Kotlin &amp; Java 语法对比 | Yalda</title>
+  <title>Kotlin &amp; Java 语法对比 | Yalda&#39;s blogs</title>
   <meta name="author" content="Yalda Guo">
   
-  <meta name="description" content="Kotlin &amp;amp; Java 语法对比null safe1val userName = a?.b?.c?.d ?: &amp;quot;&amp;quot;
-
-对象实例化12class User(val name: String, val age: Int)val user = User(&amp;quot;yald">
+  <meta name="description" content="sxx">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:title" content="Kotlin &amp; Java 语法对比"/>
-  <meta property="og:site_name" content="Yalda"/>
+  <meta property="og:site_name" content="Yalda&#39;s blogs"/>
 
   
     <meta property="og:image" content=""/>
@@ -82,7 +80,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-	  <a class="navbar-brand" href="/">Yalda</a>
+	  <a class="navbar-brand" href="/">Yalda&#39;s blogs</a>
       <div class="collapse navbar-collapse nav-menu">
 		<ul class="nav navbar-nav">
 		  
@@ -137,6 +135,8 @@
 	  <h1 id="Kotlin-Java-语法对比"><a href="#Kotlin-Java-语法对比" class="headerlink" title="Kotlin &amp; Java 语法对比"></a>Kotlin &amp; Java 语法对比</h1><h2 id="null-safe"><a href="#null-safe" class="headerlink" title="null safe"></a>null safe</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> userName = a?.b?.c?.d ?: <span class="string">&quot;&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="对象实例化"><a href="#对象实例化" class="headerlink" title="对象实例化"></a>对象实例化</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">User</span>(<span class="keyword">val</span> name: String, <span class="keyword">val</span> age: <span class="built_in">Int</span>)</span><br><span class="line"><span class="keyword">val</span> user = User(<span class="string">&quot;yalda&quot;</span>, <span class="number">31</span>)</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">	<span class="keyword">private</span> String name;</span><br><span class="line">	<span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">User</span><span class="params">(String name, <span class="type">int</span> age)</span> &#123;</span><br><span class="line">		<span class="built_in">this</span>.name = name;</span><br><span class="line">		<span class="built_in">this</span>.age = age;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// main</span></span><br><span class="line"><span class="type">User</span> <span class="variable">user</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">User</span>(<span class="string">&quot;xxx&quot;</span>, <span class="number">10</span>)</span><br></pre></td></tr></table></figure>
 
