@@ -7,9 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "nd": "hexo new draf",
-    "np": "hexo new page",
-    "npo": "hexo new post"
+    "fmt": "prettier --write \"**/*.(md|css|ejs)\""
   },
   "hexo": {
     "version": "7.0.0"
@@ -27,5 +25,8 @@
     "hexo-server": "^3.0.0",
     "hexo-tag-bootstrap": "^0.2.2",
     "hexo-theme-landscape": "^1.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1"
   }
 }

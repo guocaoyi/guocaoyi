@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MacOS 装机 v1.0
-date: 2022-02-20 12:49:06
+date: 2021-02-20 12:49:06
 tags:
   - article
   - os
