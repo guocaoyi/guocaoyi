@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>Regular Expression Cheatsheet | Yalda</title>
+  <meta name="author" content="Yalda Guo">
+  
+  <meta name="description" content="Regular Expression CheatsheetCharacter classes123456.  			any character except newline\w\d\s  		word, digit, whitespace\W\D\S		not word, digit, whites">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Regular Expression Cheatsheet"/>
+  <meta property="og:site_name" content="Yalda"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- baidu analytics -->
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    // domain !== yalda.cn, return
+    if (window.location.hostname !== 'yalda.cn') return;
+
+    var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?b6ea6ca0c389aa294890b81f26dcc186';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+ 
+<!-- Google tag (gtag.js) -->
+
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-RGH70FJBTF"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-RGH70FJBTF');
+</script>
+
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Yalda</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> Regular Expression Cheatsheet</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="Regular-Expression-Cheatsheet"><a href="#Regular-Expression-Cheatsheet" class="headerlink" title="Regular Expression Cheatsheet"></a>Regular Expression Cheatsheet</h1><h2 id="Character-classes"><a href="#Character-classes" class="headerlink" title="Character classes"></a>Character classes</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.  			any character except newline</span><br><span class="line">\w\d\s  		word, digit, whitespace</span><br><span class="line">\W\D\S		not word, digit, whitespace</span><br><span class="line">[abc]			any of a, b, or c</span><br><span class="line">[^abc]		not a, b, or c</span><br><span class="line">[a-g]			character between a &amp; g</span><br></pre></td></tr></table></figure>
+
+<h2 id="Anchors"><a href="#Anchors" class="headerlink" title="Anchors"></a>Anchors</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">^abc$ <span class="comment">//start/end of the string</span></span><br><span class="line">\b\B <span class="comment">//word, not-word boundary</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Escaped-characters"><a href="#Escaped-characters" class="headerlink" title="Escaped characters"></a>Escaped characters</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\.\*\\  <span class="comment">// escaped special characters</span></span><br><span class="line">\t\n\r  <span class="comment">// tab, linefeed, carriage return</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Groups-Lookaround"><a href="#Groups-Lookaround" class="headerlink" title="Groups &amp; Lookaround"></a>Groups &amp; Lookaround</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(abc)			capture group</span><br><span class="line">\1 			backreference to group #1</span><br><span class="line">(?:abc)		non-capturing group</span><br><span class="line">(?=abc)		positive lookahead</span><br><span class="line">(?!abc)		negative lookahead</span><br></pre></td></tr></table></figure>
+
+<h2 id="Quantifiers-Alternation"><a href="#Quantifiers-Alternation" class="headerlink" title="Quantifiers &amp; Alternation"></a>Quantifiers &amp; Alternation</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a*a+a?		0 or more, 1 or more, 0 or 1</span><br><span class="line">a&#123;5&#125;a&#123;2,&#125;		exactly five, two or more</span><br><span class="line">a&#123;1,3&#125;		between one &amp; three</span><br><span class="line">a+?a&#123;2,&#125;?		match as few as possible</span><br><span class="line">ab|cd			match ab or cd</span><br></pre></td></tr></table></figure>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a href="/2022/frontend-engineer-tech-qa/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2021/mac-install/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+</section>
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2021-04-19 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/lang-regexp/">lang/regexp<span>1</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+   &copy; 2015 - 2023 Yalda Guo 
+  <br />
+  Power by Hexo and Freemind.386
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  <a id="gotop" href="#">
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script>
+
+ 
+<script type="text/javascript">
+  var search_path = 'search.xml';
+  if (search_path.length == 0) {
+    search_path = 'search.xml';
+  }
+  var path = '/' + search_path;
+  searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
+
+
+</body>
+   </html>

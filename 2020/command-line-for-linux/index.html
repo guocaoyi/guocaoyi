@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>Command Line for Linux | Yalda</title>
+  <meta name="author" content="Yalda Guo">
+  
+  <meta name="description" content="Command Line for Linux
+常用命令行
+
+Folder operation1234567mkdir #创建一个目录rmdir # 删除一个目录mvdir # 移动或重命名一个目录cd # 改变当前目录pwd # 显示当前目录的路径名ls # 显示当前目录的内容dircmp # 比较">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Command Line for Linux"/>
+  <meta property="og:site_name" content="Yalda"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- baidu analytics -->
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    // domain !== yalda.cn, return
+    if (window.location.hostname !== 'yalda.cn') return;
+
+    var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?b6ea6ca0c389aa294890b81f26dcc186';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+ 
+<!-- Google tag (gtag.js) -->
+
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-RGH70FJBTF"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-RGH70FJBTF');
+</script>
+
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Yalda</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> Command Line for Linux</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="Command-Line-for-Linux"><a href="#Command-Line-for-Linux" class="headerlink" title="Command Line for Linux"></a>Command Line for Linux</h1><blockquote>
+<p>常用命令行</p>
+</blockquote>
+<h2 id="Folder-operation"><a href="#Folder-operation" class="headerlink" title="Folder operation"></a>Folder operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> <span class="comment">#创建一个目录</span></span><br><span class="line"><span class="built_in">rmdir</span> <span class="comment"># 删除一个目录</span></span><br><span class="line">mvdir <span class="comment"># 移动或重命名一个目录</span></span><br><span class="line"><span class="built_in">cd</span> <span class="comment"># 改变当前目录</span></span><br><span class="line"><span class="built_in">pwd</span> <span class="comment"># 显示当前目录的路径名</span></span><br><span class="line"><span class="built_in">ls</span> <span class="comment"># 显示当前目录的内容</span></span><br><span class="line">dircmp <span class="comment"># 比较两个目录的内容</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="File-Operation"><a href="#File-Operation" class="headerlink" title="File Operation"></a>File Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> <span class="comment"># 显示或链接文件</span></span><br><span class="line">pg <span class="comment"># 分页格式化显示文件内容</span></span><br><span class="line">more <span class="comment"># 分屏显示文件内容</span></span><br><span class="line"><span class="built_in">od</span> <span class="comment"># 显示非文本文件的内容</span></span><br><span class="line"><span class="built_in">cp</span> <span class="comment"># 复制文件或目录</span></span><br><span class="line"><span class="built_in">rm</span> <span class="comment"># 删除文件或目录</span></span><br><span class="line"><span class="built_in">mv</span> <span class="comment"># 改变文件或所在目录</span></span><br><span class="line"><span class="built_in">ln</span> <span class="comment"># 联接文件</span></span><br><span class="line">find <span class="comment"># 使用匹配表达式查找文件</span></span><br><span class="line">file <span class="comment"># 显示文件类型</span></span><br><span class="line">open <span class="comment"># 使用默认的程序打开文件</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Selection-Operation"><a href="#Selection-Operation" class="headerlink" title="Selection Operation"></a>Selection Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">head</span> <span class="comment"># 显示文件的最初几行</span></span><br><span class="line"><span class="built_in">tail</span> <span class="comment"># 显示文件的最后几行</span></span><br><span class="line"><span class="built_in">cut</span> <span class="comment"># 显示文件每行中的某些域</span></span><br><span class="line">colrm <span class="comment"># 从标准输入中删除若干列</span></span><br><span class="line"><span class="built_in">paste</span> <span class="comment"># 横向连接文件</span></span><br><span class="line">diff <span class="comment"># 比较并显示两个文件的差异</span></span><br><span class="line">sed <span class="comment"># 非交互方式流编辑器</span></span><br><span class="line">grep <span class="comment"># 在文件中按模式查找</span></span><br><span class="line">awk <span class="comment"># 在文件中查找并处理模式</span></span><br><span class="line"><span class="built_in">sort</span> <span class="comment"># 排序或归并文件</span></span><br><span class="line"><span class="built_in">uniq</span> <span class="comment"># 去掉文件中的重复行</span></span><br><span class="line"><span class="built_in">comm</span> <span class="comment"># 显示两有序文件的公共和非公共行</span></span><br><span class="line"><span class="built_in">wc</span> <span class="comment"># 统计文件的字符数、词数和行数</span></span><br><span class="line"><span class="built_in">nl</span> <span class="comment"># 给文件加上行号</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Auth-Operation"><a href="#Auth-Operation" class="headerlink" title="Auth Operation"></a>Auth Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">passwd <span class="comment">#修改用户密码</span></span><br><span class="line"><span class="built_in">chmod</span> <span class="comment">#改变文件或目录权限</span></span><br><span class="line"><span class="built_in">umask</span> <span class="comment">#定义创建文件的权限掩码</span></span><br><span class="line"><span class="built_in">chown</span> <span class="comment">#改变文件或目录的属主</span></span><br><span class="line"><span class="built_in">chgrp</span> <span class="comment">#改变文件或目录的所属组</span></span><br><span class="line">xlock <span class="comment">#给终端上锁</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Programmer-Operation"><a href="#Programmer-Operation" class="headerlink" title="Programmer Operation"></a>Programmer Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">make <span class="comment">#维护可执行程序的最新版本</span></span><br><span class="line"><span class="built_in">touch</span> <span class="comment">#更新文件的访问和修改时间</span></span><br><span class="line">dbx <span class="comment">#命令行界面调试工具</span></span><br><span class="line">xde <span class="comment">#图形用户界面调试工具</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Process-Operation"><a href="#Process-Operation" class="headerlink" title="Process Operation"></a>Process Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ps <span class="comment">#显示进程当前状态</span></span><br><span class="line"><span class="built_in">kill</span> <span class="comment">#终止进程</span></span><br><span class="line"><span class="built_in">nice</span> <span class="comment">#改变待执行命令的优先级</span></span><br><span class="line">renice <span class="comment">#改变已运行进程的优先级</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Timing-Operation"><a href="#Timing-Operation" class="headerlink" title="Timing Operation"></a>Timing Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">date</span> <span class="comment">#显示系统的当前日期和时间</span></span><br><span class="line">cal <span class="comment">#显示日历</span></span><br><span class="line">time <span class="comment">#统计程序的执行命令</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Network-Socket-Operation"><a href="#Network-Socket-Operation" class="headerlink" title="Network &amp; Socket Operation"></a>Network &amp; Socket Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">telnet <span class="comment">#远程登录</span></span><br><span class="line">rlogin <span class="comment">#远程登录</span></span><br><span class="line">rsh <span class="comment">#在远程主机执行指定命令</span></span><br><span class="line">ftp <span class="comment">#在本地主机与远程主机之间传输文件</span></span><br><span class="line">rcp <span class="comment">#在本地主机与远程主机之间复制文件</span></span><br><span class="line">ping <span class="comment">#给一个网络主机发送回应请求</span></span><br><span class="line">mail <span class="comment">#阅读和发送电子邮件</span></span><br><span class="line">write <span class="comment">#给另一用户发送报文</span></span><br><span class="line">mesg <span class="comment">#允许或拒绝接受报文</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Korn-Shell-Operation"><a href="#Korn-Shell-Operation" class="headerlink" title="Korn Shell Operation"></a>Korn Shell Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">history</span> <span class="comment">#列出最近执行过得几条命令及编号</span></span><br><span class="line">r <span class="comment">#重复执行最近执行过的某条命令</span></span><br><span class="line"><span class="built_in">alias</span> <span class="comment">#给某个命令定义别名</span></span><br><span class="line"><span class="built_in">unalias</span> <span class="comment">#取消对某个别名的定义</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Other-Operation"><a href="#Other-Operation" class="headerlink" title="Other Operation"></a>Other Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">uname</span> <span class="comment">#显示操作系统的有关信息</span></span><br><span class="line">clear <span class="comment">#清楚屏幕或窗口内容</span></span><br><span class="line"><span class="built_in">env</span> <span class="comment">#显示当前所有设置过的环境变量</span></span><br><span class="line"><span class="built_in">who</span> <span class="comment">#列出当前登录的所有用户</span></span><br><span class="line"><span class="built_in">whoami</span> <span class="comment">#显示当前正在进行操作的用户名</span></span><br><span class="line"><span class="built_in">tty</span> <span class="comment">#显示冲段或伪终端的名称</span></span><br><span class="line"><span class="built_in">stty</span> <span class="comment">#显示或充值控制键定义</span></span><br><span class="line"><span class="built_in">du</span> <span class="comment">#查询磁盘使用情况</span></span><br><span class="line"><span class="built_in">df</span> <span class="comment">#显示文件系统的总空间和可用空间</span></span><br><span class="line">w <span class="comment">#显示当前系统活动的总信息</span></span><br></pre></td></tr></table></figure>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a href="/2020/git-cli-cheatsheet/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2020/command-line-for-macos/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+</section>
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2020-10-20 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/os/">os<span>4</span></a></li> <li><a href="/tags/cheatsheet/">cheatsheet<span>5</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+   &copy; 2015 - 2023 Yalda Guo 
+  <br />
+  Power by Hexo and Freemind.386
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  <a id="gotop" href="#">
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script>
+
+ 
+<script type="text/javascript">
+  var search_path = 'search.xml';
+  if (search_path.length == 0) {
+    search_path = 'search.xml';
+  }
+  var path = '/' + search_path;
+  searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
+
+
+</body>
+   </html>

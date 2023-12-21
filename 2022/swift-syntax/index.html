@@ -1,0 +1,432 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>《Swift 核心技术与实现》— 01.语言基础 | Yalda</title>
+  <meta name="author" content="Yalda Guo">
+  
+  <meta name="description" content="《Swift 核心技术与实现》— 01.语言基础Reference
+第一章：Swift简介
+第二章：基本数据类型
+第三章：运算符
+第四章：流程控制
+
+第一章：Swift简介历史版本 &amp;amp; 新增特性Swift2
+
+Error handing \ guard 语法 \ 协议支持扩展
+
+Swift3">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="《Swift 核心技术与实现》— 01.语言基础"/>
+  <meta property="og:site_name" content="Yalda"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- baidu analytics -->
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    // domain !== yalda.cn, return
+    if (window.location.hostname !== 'yalda.cn') return;
+
+    var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?b6ea6ca0c389aa294890b81f26dcc186';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+ 
+<!-- Google tag (gtag.js) -->
+
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-RGH70FJBTF"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-RGH70FJBTF');
+</script>
+
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Yalda</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> 《Swift 核心技术与实现》— 01.语言基础</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="《Swift-核心技术与实现》—-01-语言基础"><a href="#《Swift-核心技术与实现》—-01-语言基础" class="headerlink" title="《Swift 核心技术与实现》— 01.语言基础"></a>《Swift 核心技术与实现》— 01.语言基础</h1><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li>第一章：Swift简介</li>
+<li>第二章：基本数据类型</li>
+<li>第三章：运算符</li>
+<li>第四章：流程控制</li>
+</ul>
+<h2 id="第一章：Swift简介"><a href="#第一章：Swift简介" class="headerlink" title="第一章：Swift简介"></a>第一章：Swift简介</h2><h3 id="历史版本-新增特性"><a href="#历史版本-新增特性" class="headerlink" title="历史版本 &amp; 新增特性"></a>历史版本 &amp; 新增特性</h3><p>Swift2</p>
+<ul>
+<li>Error handing \ guard 语法 \ 协议支持扩展</li>
+</ul>
+<p>Swift3</p>
+<ul>
+<li>新的 GCD 、 Core Graphics</li>
+<li>NS 从老的 Foundation 类型去除</li>
+<li>sequence</li>
+<li>权限控制 fileprivate \ open （open &gt; public &gt; fileprivate &gt; private）</li>
+<li>废弃（++ 、- -）</li>
+</ul>
+<p>Swift4</p>
+<ul>
+<li>extension 访问 private</li>
+<li>类型和协议组合类型（and 运算符）</li>
+<li>Associated Type 可以追加 Where 约束语句</li>
+<li>Key Paths</li>
+<li>下标支持泛型</li>
+<li>字符串增强</li>
+</ul>
+<p>Swift5</p>
+<ul>
+<li>新增关键字 some</li>
+<li>ABI 稳定</li>
+<li>Raw strings</li>
+<li>Result</li>
+<li>定义 Python 或 Ruby 等脚本语言互操作</li>
+</ul>
+<h3 id="Swift-vs-Objective-C"><a href="#Swift-vs-Objective-C" class="headerlink" title="Swift vs Objective-C"></a>Swift vs Objective-C</h3><ol>
+<li>编程范式<ol>
+<li>Swift 可以面向协议、面向对象、函数式编程</li>
+<li>Objective-C 面向对象为主；</li>
+</ol>
+</li>
+<li>类型安全<ol>
+<li>Swift 类型安全，编译期做检查；OC 则不然</li>
+</ol>
+</li>
+<li>值的类型增强<ol>
+<li>Swift struct ( Int\Double\Float\String\Array\Dictionary\Set) \ enum \ tuple 都是值类型</li>
+<li>NSString\NSNumber 指针类型（引用类型）</li>
+</ol>
+</li>
+<li>枚举增强<ol>
+<li>Swift 枚举支持：整型、浮点、字符串；拥有属性、方法、泛型、扩展</li>
+</ol>
+</li>
+<li>泛型<ol>
+<li>OC 的泛型仅在编译期</li>
+</ol>
+</li>
+<li>协议和扩展</li>
+<li>函数和闭包<ol>
+<li>Swift 一等公民</li>
+<li>OC 下函数次等公民；需要 Selector 封装；或者 block</li>
+</ol>
+</li>
+</ol>
+<h3 id="编译-SwiftC"><a href="#编译-SwiftC" class="headerlink" title="编译 &amp; SwiftC"></a>编译 &amp; SwiftC</h3><p>C -&gt; Clang -&gt; LLVM IP -&gt; LLVM compiler (x86 \ ARM …)<br>Swift -&gt; Parse -&gt; (AST) -&gt; Sema -&gt; SILGen -&gt; (SIL) -&gt; Analysis -&gt; IRGen -&gt; (IR) -&gt; LLVM -&gt; (*.o)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">swiftc -o *.out *.swift <span class="comment"># 可执行文件</span></span><br><span class="line">swiftc *.swift -dump-ast <span class="comment"># 生成 Swift AST</span></span><br><span class="line">swiftc *.swift -emit-sil <span class="comment"># 生成 SIL Swift IL</span></span><br><span class="line">swiftc *.swift -emit-ir <span class="comment"># 生成 LLVM IR 中间语言</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="REPL-交互式解释器"><a href="#REPL-交互式解释器" class="headerlink" title="REPL 交互式解释器"></a>REPL 交互式解释器</h3><p><code>$R*</code> 是对应行的返回值<br><code>:quit</code> 退出<br><code>:help</code> 帮助</p>
+<h3 id="Playground"><a href="#Playground" class="headerlink" title="Playground"></a>Playground</h3><h2 id="第二章：基本数据类型"><a href="#第二章：基本数据类型" class="headerlink" title="第二章：基本数据类型"></a>第二章：基本数据类型</h2><h3 id="变量和常量的定义"><a href="#变量和常量的定义" class="headerlink" title="变量和常量的定义"></a>变量和常量的定义</h3><p>Syntax</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a <span class="operator">=</span> <span class="number">10</span> <span class="comment">// 常量</span></span><br><span class="line"><span class="keyword">var</span> a <span class="operator">=</span> <span class="number">10</span>, b <span class="operator">=</span> <span class="number">100</span>; <span class="comment">// 变量</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> s:<span class="type">String</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> 契丹 <span class="operator">=</span> <span class="string">&quot;古中国人&quot;</span></span><br><span class="line"><span class="keyword">var</span> 🐱 <span class="operator">=</span> <span class="string">&quot;cat&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;契丹 是<span class="subst">\(契丹)</span>, 不养<span class="subst">\(🐱)</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> x <span class="operator">=</span> <span class="number">0.0</span>, y <span class="operator">=</span> <span class="number">0.2</span>, z <span class="operator">=</span> <span class="number">0.1</span></span><br><span class="line"><span class="keyword">let</span> x1 <span class="operator">=</span> <span class="number">0.0</span>, y1 <span class="operator">=</span> <span class="number">0.2</span>, z1 <span class="operator">=</span> <span class="string">&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="数值类型"><a href="#数值类型" class="headerlink" title="数值类型"></a>数值类型</h3><ul>
+<li>数字</li>
+</ul>
+<p>Swift 提供 8、16、32、64 有符号（Int32）和无符号（UInt8）类型<br>Int 类型与当前平台原生字相同长度<br>.min &amp; .max 访问最小和最大值</p>
+<ul>
+<li>浮点数</li>
+</ul>
+<p>Double 64位浮点数，15位数字的精度；推荐<br>Float 32位浮点数，6位数字的精度</p>
+<ul>
+<li>Bool</li>
+</ul>
+<p>Swift 类安全机制会阻止用非布尔类型 替换 Bool</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i <span class="operator">=</span> <span class="number">0</span></span><br><span class="line"><span class="keyword">if</span> i &#123; &#125; <span class="comment">// error</span></span><br><span class="line"><span class="keyword">if</span> i <span class="operator">==</span> <span class="number">1</span> &#123; &#125; <span class="comment">// success</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>类型别名：更具有业务意义</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typealias</span> <span class="type">AudioSample</span> <span class="operator">=</span> <span class="type">UInt8</span></span><br><span class="line"><span class="keyword">let</span> sample: <span class="type">AudioSample</span> <span class="operator">=</span> <span class="number">21</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Tuple"><a href="#Tuple" class="headerlink" title="Tuple"></a>Tuple</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> error <span class="operator">=</span> (<span class="number">1</span>, <span class="string">&quot;error msg&quot;</span>)</span><br><span class="line"><span class="keyword">let</span> error:(<span class="type">Int</span>, <span class="type">String</span>) <span class="operator">=</span> (errorCode: <span class="number">1</span>, errorMsg: <span class="string">&quot;error msg&quot;</span>)</span><br><span class="line"><span class="keyword">func</span> <span class="title function_">witeTo</span>(<span class="params">num1</span>: <span class="type">Int</span>) -&gt; (erroCode: <span class="type">Int</span>, errorMsg: <span class="type">String</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> (num1, <span class="string">&quot;errrorxxx&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> (<span class="keyword">_</span>, errorMsg) <span class="operator">=</span> witeTo(num1: <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">func</span> <span class="title function_">witeTo</span>(<span class="params">num1</span>: <span class="type">Int</span>) -&gt; (<span class="type">Int</span>, <span class="type">String</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> (num1, <span class="string">&quot;errrorxxx&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> result <span class="operator">=</span> witeTo(num1: <span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(result.<span class="number">1</span>)</span><br><span class="line"><span class="keyword">let</span> (<span class="keyword">_</span>, msg) <span class="operator">=</span> witeTo(num1: <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<p>简单实用；不必要使用类</p>
+<h3 id="Optional-类型-原理"><a href="#Optional-类型-原理" class="headerlink" title="Optional 类型&amp;原理"></a>Optional 类型&amp;原理</h3><p>ObjC</p>
+<ul>
+<li>ObjC 里的 nil 是无类型的指针，不存在的指针；</li>
+<li>ObjC 里的数组、字典、集合不允许 nil</li>
+<li>ObjC 所有对象变量都可以为 nil</li>
+<li>ObjC 只能用在对象上；NSNotFound 表示值的缺失</li>
+</ul>
+<p>Swift</p>
+<ul>
+<li>nil 不指针，是 缺失的一种特殊类型</li>
+<li>任何类型可选项都可以设置为 nil</li>
+</ul>
+<p>Optional-If 语句</p>
+<ul>
+<li>不可以直接使用</li>
+<li><code>!</code> 展开才能使用</li>
+</ul>
+<p>Unwrapped 展开方式</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 判断展开、强制展开、隐式展开、可选链</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> catchPhrase: <span class="type">String</span>?</span><br><span class="line">catchPhrase <span class="operator">=</span> <span class="string">&quot;optional string&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 强制展开 Forced binding</span></span><br><span class="line"><span class="keyword">let</span> op <span class="operator">=</span> catchPhrase<span class="operator">!</span>.count</span><br><span class="line"></span><br><span class="line"><span class="comment">// 判断展开 Optional binding</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> actualStr <span class="operator">=</span> cachePhrase &#123;</span><br><span class="line">    <span class="keyword">let</span> count <span class="operator">=</span> actualStr.count</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 隐式展开</span></span><br><span class="line"><span class="keyword">var</span> str: <span class="type">String</span>! <span class="operator">=</span> <span class="string">&quot;xxx&quot;</span></span><br><span class="line"><span class="keyword">let</span> count <span class="operator">=</span> str.count</span><br><span class="line"></span><br><span class="line"><span class="comment">// 可选链 Chaining operator</span></span><br><span class="line"><span class="keyword">var</span> str: <span class="type">String</span>? <span class="operator">=</span> <span class="string">&quot;abc&quot;</span></span><br><span class="line"><span class="keyword">let</span> count <span class="operator">=</span> str<span class="operator">?</span>.count <span class="comment">// count 仍然为 optinal 类型</span></span><br><span class="line"><span class="keyword">let</span> count <span class="operator">=</span> str<span class="operator">?</span>.count <span class="operator">??</span> <span class="number">0</span> <span class="comment">// Coalescing operator</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>Optional 其实是标准库里的一个 enum 类型；是用标准库实现语言特性的典型</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> <span class="title class_">Optional</span>&lt;<span class="title class_">Wrapped</span>&gt; : <span class="title class_">ExpressibleByNilLiteral</span> &#123;</span><br><span class="line">	<span class="keyword">case</span> none</span><br><span class="line">	<span class="keyword">case</span> <span class="keyword">some</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">init</span>(<span class="keyword">_</span> <span class="params">soome</span>: <span class="type">Wrapped</span>)</span><br><span class="line">	<span class="meta">@inliable</span> <span class="keyword">public</span> <span class="keyword">var</span> unsafelyUnwrapped: <span class="type">Wrapped</span> &#123; <span class="keyword">get</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Optional.none  = nil</span></span><br><span class="line"><span class="comment">// Optional.some = wrapped</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str <span class="operator">=</span> <span class="string">&quot;some string&quot;</span> <span class="comment">// 字面量</span></span><br><span class="line"><span class="keyword">let</span> multipLineStr <span class="operator">=</span> <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">The white rabbit on his<span class="subst">\</span></span></span><br><span class="line"><span class="subst"><span class="string"></span>Begin at th</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span> <span class="comment">// 多行字面量</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 结尾 \ 不会将 \n 计入多行字符串</span></span><br><span class="line"><span class="keyword">let</span> nums <span class="operator">=</span> <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">1<span class="subst">\</span></span></span><br><span class="line"><span class="subst"><span class="string"></span>2<span class="subst">\</span></span></span><br><span class="line"><span class="subst"><span class="string"></span>&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// unicode</span></span><br><span class="line"><span class="keyword">let</span> blackHeart <span class="operator">=</span> <span class="string">&quot;<span class="subst">\u&#123;2665&#125;</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>扩展字符串分隔符 Row String</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str <span class="operator">=</span> <span class="string">#&quot;1\n2\n&quot;#</span></span><br><span class="line"><span class="comment">// 1\n2\n</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> str <span class="operator">=</span> <span class="string">#&quot;1<span class="subst">\#n</span>2\n&quot;#</span></span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 2\n</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> str <span class="operator">=</span> <span class="string">#&quot;1&quot;\n2\n&quot;#</span></span><br><span class="line"><span class="comment">// 1&quot;\n2\n</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> str <span class="operator">=</span> <span class="string">#&quot;1&quot;<span class="subst">\#n</span>2\n&quot;#</span></span><br><span class="line"><span class="comment">// 1&quot;</span></span><br><span class="line"><span class="comment">// 2\n</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> str <span class="operator">=</span> <span class="string">##&quot;1&quot;\#n2\n&quot;##</span></span><br><span class="line"><span class="comment">// 1&quot;\#n2\n</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> str <span class="operator">=</span> <span class="string">##&quot;1<span class="subst">\##n</span>2<span class="subst">\##n</span>&quot;##</span></span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="String-的常见操作"><a href="#String-的常见操作" class="headerlink" title="String 的常见操作"></a>String 的常见操作</h3><p>ObjC （NSString, NSMutableString）<br>Swift 编译器优化了字符串使用的资源，实际上拷贝只会在确定需要的时候才会进行</p>
+<p>操作字符</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="keyword">for</span> character <span class="keyword">in</span> <span class="string">&quot;Dog&quot;</span> &#123; &#125;</span><br><span class="line"><span class="comment">// Character array</span></span><br><span class="line"><span class="keyword">let</span> catCharacters: [<span class="type">Character</span>] <span class="operator">=</span>[<span class="string">&quot;C&quot;</span>, <span class="string">&quot;a&quot;</span>, <span class="string">&quot;t&quot;</span>]</span><br><span class="line"><span class="keyword">let</span> str <span class="operator">=</span> <span class="type">String</span>([<span class="string">&quot;S&quot;</span>, <span class="string">&quot;t&quot;</span>, <span class="string">&quot;r&quot;</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment">// 拼接</span></span><br><span class="line">str.append(<span class="string">&quot;xxxxx&quot;</span>) <span class="comment">// eq. + , +=</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 插值 类似 NSString.stringWithFormat</span></span><br><span class="line"><span class="keyword">let</span> msg <span class="operator">=</span> <span class="string">&quot;<span class="subst">\(str)</span>&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// row string insert</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">#&quot;\(6+7)&quot;#</span>) <span class="comment">// \(6+7)</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">#&quot;<span class="subst">\#(<span class="number">6</span><span class="operator">+</span><span class="number">7</span>)</span>&quot;#</span>) <span class="comment">// 13</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="索引访问和修改字符串"><a href="#索引访问和修改字符串" class="headerlink" title="索引访问和修改字符串"></a>索引访问和修改字符串</h3><p>每一个 String 值都有相关的索引类型；相当于 Character 在字符串中的位置</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// a position of a character or code unit in a string</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">struct</span> <span class="title class_">Index</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>字符串索引</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> title <span class="operator">=</span> <span class="string">&quot;development&quot;</span></span><br><span class="line">title[title.startIndex] <span class="comment">// d</span></span><br><span class="line">title[<span class="number">1</span>] <span class="comment">// [error]</span></span><br><span class="line">title[title.endIndex] <span class="comment">// [error]</span></span><br><span class="line">title[title.index(title.endIndex, offsetBy: <span class="operator">-</span><span class="number">1</span>)] <span class="comment">// t</span></span><br><span class="line"><span class="string">&quot;title&quot;</span>[<span class="string">&quot;title&quot;</span>.startIndex] <span class="comment">// d</span></span><br><span class="line"></span><br><span class="line">title.index(after: title.startIndex)</span><br><span class="line"><span class="keyword">let</span> index <span class="operator">=</span> title.index(title.startIndex, offsetBy: <span class="number">2</span>)</span><br><span class="line">title[index] <span class="comment">// v</span></span><br></pre></td></tr></table></figure>
+
+<p>插入<br>移除字符：<code>remove(at:)</code>、移除范围：<code>removeSubrange(_:)</code></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title.insert(<span class="string">&quot;!&quot;</span>, at: title.endIndex) <span class="comment">// development!</span></span><br><span class="line">title.remove(at: title.index(before: title.endIndex)) <span class="comment">// !</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> range <span class="operator">=</span> title.index(title.endIndex, offsetBy: <span class="operator">-</span><span class="number">4</span>)<span class="operator">..&lt;</span>title.endIndex</span><br><span class="line">title.removeSubrange(range) <span class="comment">// develop</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="获取字符串-字符串比较"><a href="#获取字符串-字符串比较" class="headerlink" title="获取字符串&amp;字符串比较"></a>获取字符串&amp;字符串比较</h3><p>下标或者 prefix(:_) 获取 Substring 类型；Substring 拥有 String 大部分方法，并可以转成 String 类型<br>子字符串：</p>
+<ul>
+<li>Substring 可以重用一部分内存；不需要花费拷贝内存的代价</li>
+<li>String 和 Substring 遵循 StringProtocol 协议</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> slogen <span class="operator">=</span> <span class="string">&quot;Hello, swift!&quot;</span></span><br><span class="line"><span class="keyword">let</span> index <span class="operator">=</span> slogen.index(of: <span class="string">&quot;,&quot;</span>) <span class="operator">??</span> slogen.endIndex</span><br><span class="line"><span class="type">String</span>(slogen[<span class="operator">..&lt;</span>index]) <span class="comment">// hello</span></span><br></pre></td></tr></table></figure>
+
+<p>比较</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> welcome <span class="operator">=</span> <span class="string">&quot;hello, world!&quot;</span></span><br><span class="line">welcome <span class="operator">==</span> <span class="string">&quot;hello&quot;</span> <span class="comment">// false</span></span><br><span class="line">slogen.hasPrefix(<span class="string">&quot;He&quot;</span>) <span class="comment">// true</span></span><br><span class="line">slogen.hasSuffix(<span class="string">&quot;swi&quot;</span>) <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="第三章：运算符"><a href="#第三章：运算符" class="headerlink" title="第三章：运算符"></a>第三章：运算符</h2><h3 id="赋值和算数运算符"><a href="#赋值和算数运算符" class="headerlink" title="赋值和算数运算符"></a>赋值和算数运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">!</span>b b<span class="operator">!</span></span><br><span class="line">a <span class="operator">+</span> b</span><br><span class="line">a <span class="operator">?</span> b : c</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> b <span class="operator">=</span> <span class="number">1</span> <span class="comment">// 没有返回值；防止用于 == 意图</span></span><br><span class="line"><span class="operator">+</span> <span class="operator">-</span> <span class="operator">*</span> <span class="operator">/</span> <span class="operator">%</span> <span class="comment">// 可以检测并阻止溢出</span></span><br><span class="line"></span><br><span class="line">a <span class="operator">%</span> b <span class="operator">==</span> a <span class="operator">%</span> <span class="operator">-</span>b <span class="comment">// - 会忽略</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="处理算术结果溢出"><a href="#处理算术结果溢出" class="headerlink" title="处理算术结果溢出"></a>处理算术结果溢出</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">&amp;+</span> <span class="comment">// 溢出加法</span></span><br><span class="line"><span class="operator">&amp;-</span> <span class="comment">// 溢出减法</span></span><br><span class="line"><span class="operator">&amp;*</span> <span class="comment">// 溢出乘法</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> aa: <span class="type">UInt8</span> <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">aa <span class="operator">&amp;-</span> <span class="number">1</span> <span class="comment">// 255</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> a: <span class="type">UInt8</span> <span class="operator">=</span> <span class="number">255</span></span><br><span class="line">a <span class="operator">&amp;+</span> <span class="number">1</span> <span class="comment">// 0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> a1: <span class="type">Int8</span> <span class="operator">=</span> <span class="number">125</span></span><br><span class="line">a1 <span class="operator">&amp;+</span> <span class="number">11</span> <span class="comment">// -120</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> a1: <span class="type">Int8</span> <span class="operator">=</span> <span class="number">127</span></span><br><span class="line">a1 <span class="operator">&amp;*</span> <span class="number">2</span> <span class="comment">// -2</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Optional-合并空运算符"><a href="#Optional-合并空运算符" class="headerlink" title="Optional 合并空运算符"></a>Optional 合并空运算符</h3><p>a ?? b 等同于 a !&#x3D;. nil ? a : b</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">func</span> <span class="title function_">addTow</span>(<span class="params">num</span>: <span class="type">Int</span>?, <span class="params">num1</span>: <span class="type">Int</span>?) -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> (num <span class="operator">??</span> <span class="number">0</span>) <span class="operator">+</span> (num1 <span class="operator">??</span> <span class="number">0</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Range-区间运算符"><a href="#Range-区间运算符" class="headerlink" title="Range &amp; 区间运算符"></a>Range &amp; 区间运算符</h3><p>… 闭区间；..&lt; 开区间</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span><span class="operator">...</span><span class="number">5</span> <span class="comment">// &#123;lowerBound 1, upperBound 5&#125;</span></span><br><span class="line"><span class="number">1</span><span class="operator">..&lt;</span><span class="number">5</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arr <span class="operator">=</span> [<span class="string">&quot;a&quot;</span>, <span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="number">1</span><span class="operator">..&lt;</span><span class="number">5</span> &#123; <span class="comment">// arr[2...] | arr[..&lt;2]</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;index is <span class="subst">\(i)</span>&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> range <span class="operator">=</span> <span class="operator">..&lt;</span><span class="number">5</span> <span class="comment">// PartialRangeUpTo&lt;Int&gt;</span></span><br><span class="line"><span class="keyword">let</span> range <span class="operator">=</span> <span class="operator">...</span><span class="number">5</span> <span class="comment">// PartialRangeThrough&lt;Int&gt;</span></span><br><span class="line">range.contains(<span class="number">4</span>) <span class="comment">// true</span></span><br><span class="line">range.contains(<span class="number">7</span>) <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> str <span class="operator">=</span> <span class="string">&quot;cc&quot;</span></span><br><span class="line"><span class="keyword">var</span> range <span class="operator">=</span> str.startIndex<span class="operator">..&lt;</span>str.endIndex</span><br><span class="line"><span class="comment">// &#123;&#123;_rawBits 1&#125;, &#123;_rawBits 131073&#125;&#125;</span></span><br><span class="line">range <span class="operator">=</span> str.index(str.endIndex, offsetBy: <span class="operator">-</span><span class="number">1</span>)<span class="operator">..&lt;</span>str.endIndex</span><br><span class="line"><span class="comment">// &#123;&#123;_rawBits 65793&#125;, &#123;_rawBits 131073&#125;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// reversed</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> (<span class="number">0</span><span class="operator">..&lt;</span><span class="number">10</span>).reversed() &#123; &#125;</span><br></pre></td></tr></table></figure>
+
+<p>Comparable 区间</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> range <span class="operator">=</span> <span class="string">&quot;a&quot;</span><span class="operator">...</span><span class="string">&quot;z&quot;</span> <span class="comment">// &#123;lowerBound &quot;a&quot;, upperBound &quot;z&quot;&#125;</span></span><br><span class="line"><span class="keyword">for</span> char <span class="keyword">in</span> <span class="string">&quot;hello!&quot;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> <span class="operator">!</span>range.contains(<span class="type">String</span>(char)) &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\(char)</span> 不是字母&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// ! 不是字母</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">~</span> <span class="comment">// 位取反运算符</span></span><br><span class="line"><span class="operator">&amp;</span> <span class="comment">// 位与运算符</span></span><br><span class="line"><span class="operator">|</span> <span class="comment">// 位或运算符</span></span><br><span class="line"><span class="operator">^</span> <span class="comment">// 位异或运算符</span></span><br><span class="line"><span class="operator">&lt;&lt;</span> <span class="comment">// 位左移</span></span><br><span class="line"><span class="operator">&gt;&gt;</span> <span class="comment">// 位右移</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="运算符优先级和结合性"><a href="#运算符优先级和结合性" class="headerlink" title="运算符优先级和结合性"></a>运算符优先级和结合性</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Struct-Class-自定义运算符"><a href="#Struct-Class-自定义运算符" class="headerlink" title="Struct &amp; Class 自定义运算符"></a>Struct &amp; Class 自定义运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="自定义运算符"><a href="#自定义运算符" class="headerlink" title="自定义运算符"></a>自定义运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h2><h3 id="循环控制"><a href="#循环控制" class="headerlink" title="循环控制"></a>循环控制</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Switch"><a href="#Switch" class="headerlink" title="Switch"></a>Switch</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Guard-条件判断"><a href="#Guard-条件判断" class="headerlink" title="Guard 条件判断"></a>Guard 条件判断</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="模式和匹配模式"><a href="#模式和匹配模式" class="headerlink" title="模式和匹配模式"></a>模式和匹配模式</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="第四章：流程控制"><a href="#第四章：流程控制" class="headerlink" title="第四章：流程控制"></a>第四章：流程控制</h2>	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a href="/2022/swift-exp-collect/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2021/svelte-cheatsheet/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+</section>
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2022-01-14 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/lang-swift/">lang/swift<span>2</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+   &copy; 2015 - 2023 Yalda Guo 
+  <br />
+  Power by Hexo and Freemind.386
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  <a id="gotop" href="#">
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script>
+
+ 
+<script type="text/javascript">
+  var search_path = 'search.xml';
+  if (search_path.length == 0) {
+    search_path = 'search.xml';
+  }
+  var path = '/' + search_path;
+  searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
+
+
+</body>
+   </html>

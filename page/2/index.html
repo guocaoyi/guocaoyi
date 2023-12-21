@@ -1,0 +1,782 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>Page 2 | Yalda</title>
+  <meta name="author" content="Yalda Guo">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Yalda"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- baidu analytics -->
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    // domain !== yalda.cn, return
+    if (window.location.hostname !== 'yalda.cn') return;
+
+    var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?b6ea6ca0c389aa294890b81f26dcc186';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+ 
+<!-- Google tag (gtag.js) -->
+
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-RGH70FJBTF"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-RGH70FJBTF');
+</script>
+
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Yalda</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 <div class="page-header logo">
+  <h1>Yalda<span class="blink-fast">∎</span></h1>
+</div>
+
+<div class="row page">
+
+	
+	<div class="col-md-9">
+	
+
+		<div class="slogan">
+
+
+		<i class="fa fa-heart blink-slow"></i>
+
+		Do not panic!
+
+</div>    
+
+		<div id="top_search"></div>
+		<div class="mypage">
+		
+		<!-- title and entry -->
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2020/git-cli-cheatsheet/" >Git Cli CheatSheet</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2020-11-20  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="Git-Cli-CheatSheet"><a href="#Git-Cli-CheatSheet" class="headerlink" title="Git Cli CheatSheet"></a>Git Cli CheatSheet</h1><p>一、新建代码库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在当前目录新建一个Git代码库</span></span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个目录，将其初始化为Git代码库</span></span><br><span class="line">$ git init [project-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载一个项目和它的整个代码历史</span></span><br><span class="line">$ git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure>
+
+<p>二、配置<br>Git的设置文件为.gitconfig</p>
+<blockquote>
+<p>它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）<br>全局配置: <code>~/.gitconfig</code> ，项目配置: <code>$/.git/config</code></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 显示当前的Git配置</span></span><br><span class="line">$ git config --list</span><br><span class="line"></span><br><span class="line"><span class="comment"># 编辑Git配置文件</span></span><br><span class="line">$ git config -e [--global]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置提交代码时的用户信息</span></span><br><span class="line">$ git config [--global] user.name <span class="string">&quot;[name]&quot;</span></span><br><span class="line">$ git config [--global] user.email <span class="string">&quot;[email address]&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>三、增加&#x2F;删除文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加指定文件到暂存区</span></span><br><span class="line">$ git add [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加指定目录到暂存区，包括子目录</span></span><br><span class="line">$ git add [<span class="built_in">dir</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加当前目录的所有文件到暂存区</span></span><br><span class="line">$ git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加每个变化前，都会要求确认</span></span><br><span class="line"><span class="comment"># 对于同一个文件的多处变化，可以实现分次提交</span></span><br><span class="line">$ git add -p</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除工作区文件，并且将这次删除放入暂存区</span></span><br><span class="line">$ git <span class="built_in">rm</span> [file1] [file2] ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 停止追踪指定文件，但该文件会保留在工作区</span></span><br><span class="line">$ git <span class="built_in">rm</span> --cached [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 改名文件，并且将这个改名放入暂存区</span></span><br><span class="line">$ git <span class="built_in">mv</span> [file-original] [file-renamed]</span><br></pre></td></tr></table></figure>
+
+<p>四、代码提交</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 提交暂存区到仓库区</span></span><br><span class="line">$ git commit -m [message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交暂存区的指定文件到仓库区</span></span><br><span class="line">$ git commit [file1] [file2] ... -m [message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交工作区自上次commit之后的变化，直接到仓库区</span></span><br><span class="line">$ git commit -a</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交时显示所有diff信息</span></span><br><span class="line">$ git commit -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用一次新的commit，替代上一次提交</span></span><br><span class="line"><span class="comment"># 如果代码没有任何新变化，则用来改写上一次commit的提交信息</span></span><br><span class="line">$ git commit --amend -m [message]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重做上一次commit，并包括指定文件的新变化</span></span><br><span class="line">$ git commit --amend [file1] [file2] ...</span><br></pre></td></tr></table></figure>
+
+<p>五、分支</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">列出所有本地分支</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git branch</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">列出所有远程分支</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git branch -r</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">列出所有本地分支和远程分支</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git branch -a</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">新建一个分支，但依然停留在当前分支</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git branch [branch-name]</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">新建一个分支，并切换到该分支</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git checkout -b [branch]</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">新建一个分支，指向指定commit</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git branch [branch] [commit]</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">新建一个分支，与指定的远程分支建立追踪关系</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git branch --track [branch] [remote-branch]</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换到指定分支，并更新工作区</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git checkout [branch-name]</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换到上一个分支</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git checkout -</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">建立追踪关系，在现有分支与指定的远程分支之间</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git branch --set-upstream [branch] [remote-branch]</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">合并指定分支到当前分支</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git merge [branch]</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">选择一个commit，合并进当前分支</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git cherry-pick [commit]</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除分支</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git branch -d [branch-name]</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除远程分支</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git push origin --delete [branch-name]</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git branch -dr [remote/branch]</span></span><br></pre></td></tr></table></figure>
+
+<p>六、标签</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 列出所有tag</span></span><br><span class="line">$ git tag</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个tag在当前commit</span></span><br><span class="line">$ git tag [tag]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个tag在指定commit</span></span><br><span class="line">$ git tag [tag] [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除本地tag</span></span><br><span class="line">$ git tag -d [tag]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除远程tag</span></span><br><span class="line">$ git push origin :refs/tags/[tagName]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看tag信息</span></span><br><span class="line">$ git show [tag]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交指定tag</span></span><br><span class="line">$ git push [remote] [tag]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交所有tag</span></span><br><span class="line">$ git push [remote] --tags</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，指向某个tag</span></span><br><span class="line">$ git checkout -b [branch] [tag]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从远程分支老到本地并创建本地新分支</span></span><br><span class="line">$ git checkout -b [[branch]] origin/[[branch]]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交本地分支到远程（创建新远程分支）</span></span><br><span class="line">$ git push --set-upstream origin [[branch]]</span><br></pre></td></tr></table></figure>
+
+<p>七、查看信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 显示有变更的文件</span></span><br><span class="line">$ git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示当前分支的版本历史</span></span><br><span class="line">$ git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示commit历史，以及每次commit发生变更的文件</span></span><br><span class="line">$ git <span class="built_in">log</span> --<span class="built_in">stat</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 搜索提交历史，根据关键词</span></span><br><span class="line">$ git <span class="built_in">log</span> -S [keyword]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某个commit之后的所有变动，每个commit占据一行</span></span><br><span class="line">$ git <span class="built_in">log</span> [tag] HEAD --pretty=format:%s</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某个commit之后的所有变动，其&quot;提交说明&quot;必须符合搜索条件</span></span><br><span class="line">$ git <span class="built_in">log</span> [tag] HEAD --grep feature</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某个文件的版本历史，包括文件改名</span></span><br><span class="line">$ git <span class="built_in">log</span> --follow [file]</span><br><span class="line">$ git whatchanged [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示指定文件相关的每一次diff</span></span><br><span class="line">$ git <span class="built_in">log</span> -p [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示过去5次提交</span></span><br><span class="line">$ git <span class="built_in">log</span> -5 --pretty --oneline</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示所有提交过的用户，按提交次数排序</span></span><br><span class="line">$ git shortlog -sn</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示指定文件是什么人在什么时间修改过</span></span><br><span class="line">$ git blame [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示暂存区和工作区的差异</span></span><br><span class="line">$ git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示暂存区和上一个commit的差异</span></span><br><span class="line">$ git diff --cached [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示工作区与当前分支最新commit之间的差异</span></span><br><span class="line">$ git diff HEAD</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示两次提交之间的差异</span></span><br><span class="line">$ git diff [first-branch]...[second-branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示今天你写了多少行代码</span></span><br><span class="line">$ git diff --shortstat <span class="string">&quot;@&#123;0 day ago&#125;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某次提交的元数据和内容变化</span></span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某次提交发生变化的文件</span></span><br><span class="line">$ git show --name-only [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某次提交时，某个文件的内容</span></span><br><span class="line">$ git show [commit]:[filename]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示当前分支的最近几次提交</span></span><br><span class="line">$ git reflog</span><br></pre></td></tr></table></figure>
+
+<p>八、远程同步</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载远程仓库的所有变动</span></span><br><span class="line">$ git fetch [remote]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示所有远程仓库</span></span><br><span class="line">$ git remote -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示某个远程仓库的信息</span></span><br><span class="line">$ git remote show [remote]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 增加一个新的远程仓库，并命名</span></span><br><span class="line">$ git remote add [shortname] [url]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 取回远程仓库的变化，并与本地分支合并</span></span><br><span class="line">$ git pull [remote] [branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 上传本地指定分支到远程仓库</span></span><br><span class="line">$ git push [remote] [branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强行推送当前分支到远程仓库，即使有冲突</span></span><br><span class="line">$ git push [remote] --force</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送所有分支到远程仓库</span></span><br><span class="line">$ git push [remote] --all</span><br></pre></td></tr></table></figure>
+
+<p>九、撤销</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 恢复暂存区的指定文件到工作区</span></span><br><span class="line">$ git checkout [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 恢复某个commit的指定文件到暂存区和工作区</span></span><br><span class="line">$ git checkout [commit] [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 恢复暂存区的所有文件到工作区</span></span><br><span class="line">$ git checkout .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</span></span><br><span class="line">$ git reset [file]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置暂存区与工作区，与上一次commit保持一致</span></span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</span></span><br><span class="line">$ git reset [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</span></span><br><span class="line">$ git reset --hard [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</span></span><br><span class="line">$ git reset --keep [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个commit，用来撤销指定commit</span></span><br><span class="line"><span class="comment"># 后者的所有变化都将被前者抵消，并且应用到当前分支</span></span><br><span class="line">$ git revert [commit]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 暂时将未提交的变化移除，稍后再移入</span></span><br><span class="line">$ git stash</span><br><span class="line">$ git stash pop</span><br></pre></td></tr></table></figure>
+
+<p>十、其他</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成一个可供发布的压缩包</span></span><br><span class="line">$ git archive</span><br></pre></td></tr></table></figure>
+
+	
+	</div>
+  <a type="button" href="/2020/git-cli-cheatsheet/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2020/command-line-for-linux/" >Command Line for Linux</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2020-10-20  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="Command-Line-for-Linux"><a href="#Command-Line-for-Linux" class="headerlink" title="Command Line for Linux"></a>Command Line for Linux</h1><blockquote>
+<p>常用命令行</p>
+</blockquote>
+<h2 id="Folder-operation"><a href="#Folder-operation" class="headerlink" title="Folder operation"></a>Folder operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> <span class="comment">#创建一个目录</span></span><br><span class="line"><span class="built_in">rmdir</span> <span class="comment"># 删除一个目录</span></span><br><span class="line">mvdir <span class="comment"># 移动或重命名一个目录</span></span><br><span class="line"><span class="built_in">cd</span> <span class="comment"># 改变当前目录</span></span><br><span class="line"><span class="built_in">pwd</span> <span class="comment"># 显示当前目录的路径名</span></span><br><span class="line"><span class="built_in">ls</span> <span class="comment"># 显示当前目录的内容</span></span><br><span class="line">dircmp <span class="comment"># 比较两个目录的内容</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="File-Operation"><a href="#File-Operation" class="headerlink" title="File Operation"></a>File Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> <span class="comment"># 显示或链接文件</span></span><br><span class="line">pg <span class="comment"># 分页格式化显示文件内容</span></span><br><span class="line">more <span class="comment"># 分屏显示文件内容</span></span><br><span class="line"><span class="built_in">od</span> <span class="comment"># 显示非文本文件的内容</span></span><br><span class="line"><span class="built_in">cp</span> <span class="comment"># 复制文件或目录</span></span><br><span class="line"><span class="built_in">rm</span> <span class="comment"># 删除文件或目录</span></span><br><span class="line"><span class="built_in">mv</span> <span class="comment"># 改变文件或所在目录</span></span><br><span class="line"><span class="built_in">ln</span> <span class="comment"># 联接文件</span></span><br><span class="line">find <span class="comment"># 使用匹配表达式查找文件</span></span><br><span class="line">file <span class="comment"># 显示文件类型</span></span><br><span class="line">open <span class="comment"># 使用默认的程序打开文件</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Selection-Operation"><a href="#Selection-Operation" class="headerlink" title="Selection Operation"></a>Selection Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">head</span> <span class="comment"># 显示文件的最初几行</span></span><br><span class="line"><span class="built_in">tail</span> <span class="comment"># 显示文件的最后几行</span></span><br><span class="line"><span class="built_in">cut</span> <span class="comment"># 显示文件每行中的某些域</span></span><br><span class="line">colrm <span class="comment"># 从标准输入中删除若干列</span></span><br><span class="line"><span class="built_in">paste</span> <span class="comment"># 横向连接文件</span></span><br><span class="line">diff <span class="comment"># 比较并显示两个文件的差异</span></span><br><span class="line">sed <span class="comment"># 非交互方式流编辑器</span></span><br><span class="line">grep <span class="comment"># 在文件中按模式查找</span></span><br><span class="line">awk <span class="comment"># 在文件中查找并处理模式</span></span><br><span class="line"><span class="built_in">sort</span> <span class="comment"># 排序或归并文件</span></span><br><span class="line"><span class="built_in">uniq</span> <span class="comment"># 去掉文件中的重复行</span></span><br><span class="line"><span class="built_in">comm</span> <span class="comment"># 显示两有序文件的公共和非公共行</span></span><br><span class="line"><span class="built_in">wc</span> <span class="comment"># 统计文件的字符数、词数和行数</span></span><br><span class="line"><span class="built_in">nl</span> <span class="comment"># 给文件加上行号</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Auth-Operation"><a href="#Auth-Operation" class="headerlink" title="Auth Operation"></a>Auth Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">passwd <span class="comment">#修改用户密码</span></span><br><span class="line"><span class="built_in">chmod</span> <span class="comment">#改变文件或目录权限</span></span><br><span class="line"><span class="built_in">umask</span> <span class="comment">#定义创建文件的权限掩码</span></span><br><span class="line"><span class="built_in">chown</span> <span class="comment">#改变文件或目录的属主</span></span><br><span class="line"><span class="built_in">chgrp</span> <span class="comment">#改变文件或目录的所属组</span></span><br><span class="line">xlock <span class="comment">#给终端上锁</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Programmer-Operation"><a href="#Programmer-Operation" class="headerlink" title="Programmer Operation"></a>Programmer Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">make <span class="comment">#维护可执行程序的最新版本</span></span><br><span class="line"><span class="built_in">touch</span> <span class="comment">#更新文件的访问和修改时间</span></span><br><span class="line">dbx <span class="comment">#命令行界面调试工具</span></span><br><span class="line">xde <span class="comment">#图形用户界面调试工具</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Process-Operation"><a href="#Process-Operation" class="headerlink" title="Process Operation"></a>Process Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ps <span class="comment">#显示进程当前状态</span></span><br><span class="line"><span class="built_in">kill</span> <span class="comment">#终止进程</span></span><br><span class="line"><span class="built_in">nice</span> <span class="comment">#改变待执行命令的优先级</span></span><br><span class="line">renice <span class="comment">#改变已运行进程的优先级</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Timing-Operation"><a href="#Timing-Operation" class="headerlink" title="Timing Operation"></a>Timing Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">date</span> <span class="comment">#显示系统的当前日期和时间</span></span><br><span class="line">cal <span class="comment">#显示日历</span></span><br><span class="line">time <span class="comment">#统计程序的执行命令</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Network-Socket-Operation"><a href="#Network-Socket-Operation" class="headerlink" title="Network &amp; Socket Operation"></a>Network &amp; Socket Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">telnet <span class="comment">#远程登录</span></span><br><span class="line">rlogin <span class="comment">#远程登录</span></span><br><span class="line">rsh <span class="comment">#在远程主机执行指定命令</span></span><br><span class="line">ftp <span class="comment">#在本地主机与远程主机之间传输文件</span></span><br><span class="line">rcp <span class="comment">#在本地主机与远程主机之间复制文件</span></span><br><span class="line">ping <span class="comment">#给一个网络主机发送回应请求</span></span><br><span class="line">mail <span class="comment">#阅读和发送电子邮件</span></span><br><span class="line">write <span class="comment">#给另一用户发送报文</span></span><br><span class="line">mesg <span class="comment">#允许或拒绝接受报文</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Korn-Shell-Operation"><a href="#Korn-Shell-Operation" class="headerlink" title="Korn Shell Operation"></a>Korn Shell Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">history</span> <span class="comment">#列出最近执行过得几条命令及编号</span></span><br><span class="line">r <span class="comment">#重复执行最近执行过的某条命令</span></span><br><span class="line"><span class="built_in">alias</span> <span class="comment">#给某个命令定义别名</span></span><br><span class="line"><span class="built_in">unalias</span> <span class="comment">#取消对某个别名的定义</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Other-Operation"><a href="#Other-Operation" class="headerlink" title="Other Operation"></a>Other Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">uname</span> <span class="comment">#显示操作系统的有关信息</span></span><br><span class="line">clear <span class="comment">#清楚屏幕或窗口内容</span></span><br><span class="line"><span class="built_in">env</span> <span class="comment">#显示当前所有设置过的环境变量</span></span><br><span class="line"><span class="built_in">who</span> <span class="comment">#列出当前登录的所有用户</span></span><br><span class="line"><span class="built_in">whoami</span> <span class="comment">#显示当前正在进行操作的用户名</span></span><br><span class="line"><span class="built_in">tty</span> <span class="comment">#显示冲段或伪终端的名称</span></span><br><span class="line"><span class="built_in">stty</span> <span class="comment">#显示或充值控制键定义</span></span><br><span class="line"><span class="built_in">du</span> <span class="comment">#查询磁盘使用情况</span></span><br><span class="line"><span class="built_in">df</span> <span class="comment">#显示文件系统的总空间和可用空间</span></span><br><span class="line">w <span class="comment">#显示当前系统活动的总信息</span></span><br></pre></td></tr></table></figure>
+
+	
+	</div>
+  <a type="button" href="/2020/command-line-for-linux/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2020/command-line-for-macos/" >Command Line for macOS</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2020-10-20  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="Command-Line-for-macOS"><a href="#Command-Line-for-macOS" class="headerlink" title="Command Line for macOS"></a>Command Line for macOS</h1><blockquote>
+<p>常用命令行</p>
+</blockquote>
+<h2 id="Folder-Operation"><a href="#Folder-Operation" class="headerlink" title="Folder Operation"></a>Folder Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> <span class="comment">#创建一个目录</span></span><br><span class="line"><span class="built_in">rmdir</span> <span class="comment"># 删除一个目录</span></span><br><span class="line">mvdir <span class="comment"># 移动或重命名一个目录</span></span><br><span class="line"><span class="built_in">cd</span> <span class="comment"># 改变当前目录</span></span><br><span class="line"><span class="built_in">pwd</span> <span class="comment"># 显示当前目录的路径名</span></span><br><span class="line"><span class="built_in">ls</span> <span class="comment"># 显示当前目录的内容</span></span><br><span class="line">dircmp <span class="comment"># 比较两个目录的内容</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="File-Operation"><a href="#File-Operation" class="headerlink" title="File Operation"></a>File Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> <span class="comment"># 显示或链接文件</span></span><br><span class="line">pg <span class="comment"># 分页格式化显示文件内容</span></span><br><span class="line">more <span class="comment"># 分屏显示文件内容</span></span><br><span class="line"><span class="built_in">od</span> <span class="comment"># 显示非文本文件的内容</span></span><br><span class="line"><span class="built_in">cp</span> <span class="comment"># 复制文件或目录</span></span><br><span class="line"><span class="built_in">rm</span> <span class="comment"># 删除文件或目录</span></span><br><span class="line"><span class="built_in">mv</span> <span class="comment"># 改变文件或所在目录</span></span><br><span class="line"><span class="built_in">ln</span> <span class="comment"># 联接文件</span></span><br><span class="line">find <span class="comment"># 使用匹配表达式查找文件</span></span><br><span class="line">file <span class="comment"># 显示文件类型</span></span><br><span class="line">open <span class="comment"># 使用默认的程序打开文件</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Selection-Operation"><a href="#Selection-Operation" class="headerlink" title="Selection Operation"></a>Selection Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">head</span> <span class="comment"># 显示文件的最初几行</span></span><br><span class="line"><span class="built_in">tail</span> <span class="comment"># 显示文件的最后几行</span></span><br><span class="line"><span class="built_in">cut</span> <span class="comment"># 显示文件每行中的某些域</span></span><br><span class="line">colrm <span class="comment"># 从标准输入中删除若干列</span></span><br><span class="line"><span class="built_in">paste</span> <span class="comment"># 横向连接文件</span></span><br><span class="line">diff <span class="comment"># 比较并显示两个文件的差异</span></span><br><span class="line">sed <span class="comment"># 非交互方式流编辑器</span></span><br><span class="line">grep <span class="comment"># 在文件中按模式查找</span></span><br><span class="line">awk <span class="comment"># 在文件中查找并处理模式</span></span><br><span class="line"><span class="built_in">sort</span> <span class="comment"># 排序或归并文件</span></span><br><span class="line"><span class="built_in">uniq</span> <span class="comment"># 去掉文件中的重复行</span></span><br><span class="line"><span class="built_in">comm</span> <span class="comment"># 显示两有序文件的公共和非公共行</span></span><br><span class="line"><span class="built_in">wc</span> <span class="comment"># 统计文件的字符数、词数和行数</span></span><br><span class="line"><span class="built_in">nl</span> <span class="comment"># 给文件加上行号</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Auth-Operation"><a href="#Auth-Operation" class="headerlink" title="Auth Operation"></a>Auth Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">passwd <span class="comment">#修改用户密码</span></span><br><span class="line"><span class="built_in">chmod</span> <span class="comment">#改变文件或目录权限</span></span><br><span class="line"><span class="built_in">umask</span> <span class="comment">#定义创建文件的权限掩码</span></span><br><span class="line"><span class="built_in">chown</span> <span class="comment">#改变文件或目录的属主</span></span><br><span class="line"><span class="built_in">chgrp</span> <span class="comment">#改变文件或目录的所属组</span></span><br><span class="line">xlock <span class="comment">#给终端上锁</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Programmer-Operation"><a href="#Programmer-Operation" class="headerlink" title="Programmer Operation"></a>Programmer Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">make <span class="comment">#维护可执行程序的最新版本</span></span><br><span class="line"><span class="built_in">touch</span> <span class="comment">#更新文件的访问和修改时间</span></span><br><span class="line">dbx <span class="comment">#命令行界面调试工具</span></span><br><span class="line">xde <span class="comment">#图形用户界面调试工具</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Process-Operation"><a href="#Process-Operation" class="headerlink" title="Process Operation"></a>Process Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ps <span class="comment">#显示进程当前状态</span></span><br><span class="line"><span class="built_in">kill</span> <span class="comment">#终止进程</span></span><br><span class="line"><span class="built_in">nice</span> <span class="comment">#改变待执行命令的优先级</span></span><br><span class="line">renice <span class="comment">#改变已运行进程的优先级</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Timing-Operation"><a href="#Timing-Operation" class="headerlink" title="Timing Operation"></a>Timing Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">date</span> <span class="comment">#显示系统的当前日期和时间</span></span><br><span class="line">cal <span class="comment">#显示日历</span></span><br><span class="line">time <span class="comment">#统计程序的执行命令</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Network-Socket-Operation"><a href="#Network-Socket-Operation" class="headerlink" title="Network &amp; Socket Operation"></a>Network &amp; Socket Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">telnet <span class="comment">#远程登录</span></span><br><span class="line">rlogin <span class="comment">#远程登录</span></span><br><span class="line">rsh <span class="comment">#在远程主机执行指定命令</span></span><br><span class="line">ftp <span class="comment">#在本地主机与远程主机之间传输文件</span></span><br><span class="line">rcp <span class="comment">#在本地主机与远程主机之间复制文件</span></span><br><span class="line">ping <span class="comment">#给一个网络主机发送回应请求</span></span><br><span class="line">mail <span class="comment">#阅读和发送电子邮件</span></span><br><span class="line">write <span class="comment">#给另一用户发送报文</span></span><br><span class="line">mesg <span class="comment">#允许或拒绝接受报文</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Korn-Shell-Operation"><a href="#Korn-Shell-Operation" class="headerlink" title="Korn Shell Operation"></a>Korn Shell Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">history</span> <span class="comment">#列出最近执行过得几条命令及编号</span></span><br><span class="line">r <span class="comment">#重复执行最近执行过的某条命令</span></span><br><span class="line"><span class="built_in">alias</span> <span class="comment">#给某个命令定义别名</span></span><br><span class="line"><span class="built_in">unalias</span> <span class="comment">#取消对某个别名的定义</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Other-Operation"><a href="#Other-Operation" class="headerlink" title="Other Operation"></a>Other Operation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">uname</span> <span class="comment">#显示操作系统的有关信息</span></span><br><span class="line">clear <span class="comment">#清楚屏幕或窗口内容</span></span><br><span class="line"><span class="built_in">env</span> <span class="comment">#显示当前所有设置过的环境变量</span></span><br><span class="line"><span class="built_in">who</span> <span class="comment">#列出当前登录的所有用户</span></span><br><span class="line"><span class="built_in">whoami</span> <span class="comment">#显示当前正在进行操作的用户名</span></span><br><span class="line"><span class="built_in">tty</span> <span class="comment">#显示冲段或伪终端的名称</span></span><br><span class="line"><span class="built_in">stty</span> <span class="comment">#显示或充值控制键定义</span></span><br><span class="line"><span class="built_in">du</span> <span class="comment">#查询磁盘使用情况</span></span><br><span class="line"><span class="built_in">df</span> <span class="comment">#显示文件系统的总空间和可用空间</span></span><br><span class="line">w <span class="comment">#显示当前系统活动的总信息</span></span><br></pre></td></tr></table></figure>
+
+	
+	</div>
+  <a type="button" href="/2020/command-line-for-macos/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2019/vscode-keyboard-shortcuts/" >VSCode Keyboard Shortcuts</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2019-11-30  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="VSCode-常用快捷键"><a href="#VSCode-常用快捷键" class="headerlink" title="VSCode 常用快捷键"></a>VSCode 常用快捷键</h1><p><code>command + p</code> &gt; <code>shell command</code> 开始 <code>code</code> 命令行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 多行转一行(折叠：改变代码结构)</span></span><br><span class="line">Ctrl + J</span><br><span class="line"></span><br><span class="line"><span class="comment"># 格式化代码</span></span><br><span class="line">Shift + Option + F <span class="comment"># mac</span></span><br><span class="line">Shift + Alt + F <span class="comment"># win</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 代码折叠</span></span><br><span class="line">Command+ Option + [ <span class="comment"># 折叠</span></span><br><span class="line">Command+ Option + ] <span class="comment"># 展开</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 向上/向下 复制行</span></span><br><span class="line">Shift + Option + Up / Down</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拆分编辑框</span></span><br><span class="line">Command + \ or 2,3,4</span><br><span class="line">Command + 1,2,3,4 <span class="comment"># 聚焦</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 单词选中</span></span><br><span class="line">Command + D</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开关闭侧边栏</span></span><br><span class="line">Command + B</span><br><span class="line"></span><br><span class="line"><span class="comment"># 跳转到特定行</span></span><br><span class="line">Ctrl + g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 文件中符号跳转</span></span><br><span class="line">Shift + Option + O</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除上一个单词</span></span><br><span class="line">Option + Delete</span><br><span class="line"></span><br><span class="line"><span class="comment"># 选中词</span></span><br><span class="line">Option + Shift + Left / Right</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除行</span></span><br><span class="line">Command + X</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加多个光标</span></span><br><span class="line">Command + Option + Up / Down</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重命名（replace）</span></span><br><span class="line">F2</span><br><span class="line"></span><br><span class="line"><span class="comment"># 块选择</span></span><br><span class="line">Shift + Option + (鼠标)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 命令面板</span></span><br><span class="line"><span class="comment"># 1. 打开文件</span></span><br><span class="line"><span class="comment"># 2. 查看快捷键 输入 &gt;</span></span><br><span class="line">Command + P</span><br></pre></td></tr></table></figure>
+
+	
+	</div>
+  <a type="button" href="/2019/vscode-keyboard-shortcuts/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2019/charles-macos/" >Charles macOS 抓包实践</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2019-07-14  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="Charles-macOS-抓包实践"><a href="#Charles-macOS-抓包实践" class="headerlink" title="Charles macOS 抓包实践"></a>Charles macOS 抓包实践</h1><blockquote>
+<p>Tag：Proxy、macOS、iOS、WeChat Client、微信公众号文章</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Cyangdaowei/article/details/119362002">MAC版:Charles根证书(Charles Root Certificates)的安装_Cyangdaowei的博客-CSDN博客_mac安装Charles证书</a></p>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
+<li>Charles</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --cask charles</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>信用证书</li>
+<li>桌面端应用（浏览器或者客户端）</li>
+<li>移动端设备 &amp; 应用</li>
+</ul>
+<h2 id="Mac-应用设置步骤"><a href="#Mac-应用设置步骤" class="headerlink" title="Mac 应用设置步骤"></a>Mac 应用设置步骤</h2><ul>
+<li><ol>
+<li>证书下载</li>
+</ol>
+<ul>
+<li>Charles &gt; Help &gt; SSL Proxying &gt; Install Charles Root Certificate</li>
+</ul>
+</li>
+<li><ol start="2">
+<li>添加证书</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>Mac 证书信任设置（默认不受信任，请求无法拦截）</li>
+</ol>
+<ul>
+<li>打开证书，在 Trust 一列（使用此证书时），设置为始终信任</li>
+</ul>
+</li>
+<li><ol start="4">
+<li>Charles 设置 SSL Proxying</li>
+</ol>
+<ul>
+<li>Charles &gt; Proxy &gt; SSL Proxying Settings</li>
+<li>Enable SSL Proxying</li>
+<li>Include add a location (host &#x3D; <code>*</code> port &#x3D; <code>443</code>)</li>
+</ul>
+</li>
+</ul>
+<h2 id="iOS-设备设置步骤"><a href="#iOS-设备设置步骤" class="headerlink" title="iOS 设备设置步骤"></a>iOS 设备设置步骤</h2><p>在 <strong>Mac 应用设置步骤的第 3步后</strong>，加入下步骤</p>
+<ul>
+<li>Charles 证书安装到移动设备上<ul>
+<li>Charles &gt; Help &gt; SSL Proxying &gt; Install Charles Root Certificate on a Mobile Device or Remote Browser</li>
+</ul>
+</li>
+<li>移动设备信任 Charles 证书</li>
+</ul>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><ol>
+<li>使用 Charles 抓取 微信桌面客户端中公众号历史文章列表；</li>
+<li>通过 Charles 代理，查看手机微信公众号历史文章列表；</li>
+</ol>
+
+	
+	</div>
+  <a type="button" href="/2019/charles-macos/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2018/es-next/" >ECMAScript Next</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2018-06-30  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="ECMAScript-Next"><a href="#ECMAScript-Next" class="headerlink" title="ECMAScript Next"></a>ECMAScript Next</h1><h2 id="ECMAScript-2016-ES7"><a href="#ECMAScript-2016-ES7" class="headerlink" title="ECMAScript 2016(ES7)"></a>ECMAScript 2016(ES7)</h2><ul>
+<li>Array.prototype.includes()</li>
+<li>** 运算符</li>
+<li>等效于 Math.pow()</li>
+</ul>
+<h2 id="ECMAScript-2017-ES8"><a href="#ECMAScript-2017-ES8" class="headerlink" title="ECMAScript 2017(ES8)"></a>ECMAScript 2017(ES8)</h2><ul>
+<li>async&#x2F;await</li>
+<li>Object.values()</li>
+<li>Object.entries()</li>
+<li>String padding</li>
+<li>String.prototype.padStart</li>
+<li>String.prototype.padEnd</li>
+<li>Function Args Semi Close</li>
+<li>函数参数列表允许逗号结尾；方便 git 协同</li>
+<li>Object.getOwnPropertyDescriptors()</li>
+<li>SharedArrayBuffer 对象</li>
+<li>Atomics 对象</li>
+</ul>
+<h2 id="ECMAScript-2018-ES9"><a href="#ECMAScript-2018-ES9" class="headerlink" title="ECMAScript 2018(ES9)"></a>ECMAScript 2018(ES9)</h2><ul>
+<li>异步迭代</li>
+<li>Promise.finally()</li>
+<li>Rest&#x2F;Spread 属性</li>
+<li>正则表达式命名捕获组</li>
+<li>正则表达式反向断言</li>
+<li>正则表达式dotAll模式</li>
+<li>正则表达式 Unicode 转义</li>
+<li>非转义序列的模板字符串</li>
+</ul>
+<h2 id="ECMAScript-2019-ES10"><a href="#ECMAScript-2019-ES10" class="headerlink" title="ECMAScript 2019(ES10)"></a>ECMAScript 2019(ES10)</h2><ul>
+<li>行分隔符（U + 2028）和段分隔符（U + 2029）符号现在允许在字符串文字中，与JSON匹配</li>
+<li>JSON.stringify</li>
+<li>Array.prototype.flat()</li>
+<li>Array.prototype.flatMap()</li>
+<li>新增了String的trimStart()方法和trimEnd()方法</li>
+<li>Object.fromEntries()</li>
+<li>Symbol.prototype.description</li>
+<li>String.prototype.matchAll</li>
+<li>matchAll可以更好的用于分组</li>
+<li>Function.prototype.toString()现在返回精确字符，包括空格和注释</li>
+<li>修改 catch 绑定</li>
+<li>新的基本数据类型BigInt</li>
+</ul>
+<h2 id="ECMAScript-2020-ES11"><a href="#ECMAScript-2020-ES11" class="headerlink" title="ECMAScript 2020(ES11)"></a>ECMAScript 2020(ES11)</h2><ul>
+<li>Optional Chaining</li>
+<li>Nullish Coalescing</li>
+<li>Private Fields</li>
+<li>Static Fields</li>
+<li>Top Level Await</li>
+<li>Promise.allSettled</li>
+<li>Dynamic Import</li>
+<li>MatchAll</li>
+<li>globalThis</li>
+<li>BigInt</li>
+</ul>
+<h2 id="ECMAScript-2021-ES12"><a href="#ECMAScript-2021-ES12" class="headerlink" title="ECMAScript 2021(ES12)"></a>ECMAScript 2021(ES12)</h2><ul>
+<li>String.prototype.replaceAll</li>
+<li>Private Method &amp; Private Accessors</li>
+<li>Promise.any &amp; AggregateError</li>
+<li>WeakRefs</li>
+<li>逻辑赋值操作符</li>
+<li>||&#x3D;、&amp;&amp;&#x3D;、??&#x3D;</li>
+<li>数字分隔符</li>
+</ul>
+<h2 id="ECMAScript-2022-ES13"><a href="#ECMAScript-2022-ES13" class="headerlink" title="ECMAScript 2022(ES13)"></a>ECMAScript 2022(ES13)</h2><ul>
+<li>New members of classes<ul>
+<li>Properties (public slots)</li>
+<li>Private slots</li>
+<li>Static initialization blocks</li>
+</ul>
+</li>
+<li>Private slot checks</li>
+<li><code>#privateSlot</code> in obj</li>
+<li>Top-level await in modules</li>
+<li>error.cause</li>
+<li>new Error(‘something went wrong’, { cause: otherError })</li>
+<li>Array.propertye.at()</li>
+<li>RegExp match indices</li>
+<li>Object.hasOwn(obj, propKey)</li>
+</ul>
+<h2 id="ECMAScript-2023-ES14"><a href="#ECMAScript-2023-ES14" class="headerlink" title="ECMAScript 2023(ES14)"></a>ECMAScript 2023(ES14)</h2>
+	
+	</div>
+  <a type="button" href="/2018/es-next/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2018/js-design-patterns/" >JavaScript 设计模式</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2018-06-30  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="JavaScript-设计模式"><a href="#JavaScript-设计模式" class="headerlink" title="JavaScript 设计模式"></a>JavaScript 设计模式</h1><ul>
+<li>JavaScript设计模式<ul>
+<li>基础知识<ul>
+<li>面对对象的JS<ul>
+<li>动态语言类型和鸭子类型</li>
+<li>多态</li>
+<li>封装</li>
+<li>原型模式和y原型继承</li>
+</ul>
+</li>
+<li>this\call\apply<ul>
+<li>this</li>
+<li>call\apply</li>
+</ul>
+</li>
+<li>闭包和高阶函数<ul>
+<li>闭包</li>
+<li>高阶函数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>设计原则<ul>
+<li>单一职责原则</li>
+<li>最少知识原则</li>
+<li>开放-关闭原则</li>
+</ul>
+</li>
+<li>设计模式<ul>
+<li>单例模式<ul>
+<li>编程技巧<ul>
+<li>接口和面向接口编程</li>
+<li>代码重构</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>策略模式</li>
+<li>代理模式</li>
+<li>迭代器模式</li>
+<li>发布-订阅模式</li>
+<li>命令模式</li>
+<li>组合模式</li>
+<li>模板方法模式</li>
+<li>享元模式</li>
+<li>职责链模式</li>
+<li>中介者模式</li>
+<li>装饰者模式</li>
+<li>状态模式</li>
+<li>适配器模式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+	
+	</div>
+  <a type="button" href="/2018/js-design-patterns/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+
+		</div>
+
+		<!-- pagination -->
+		<div>
+  		<center>
+		<div class="pagination">
+
+   
+    
+     <a href="/" type="button" class="btn btn-default"><i class="fa fa-arrow-circle-o-left"></i> Prev</a>
+      
+
+        <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+ 
+          <a type="button" class="btn btn-default disabled">Next<i class="fa fa-arrow-circle-o-right"></i></a>
+        
+
+  
+</div>
+
+  		</center>
+		</div>
+
+		
+		
+	</div> <!-- col-md-9 -->
+
+	
+		<div class="col-md-3">
+	<div id="sidebar">
+	
+			
+  <div id="site_search">
+   <div class="form-group">
+    <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control"/>
+   </div>  
+  <div id="local-search-result"></div>
+  </div>
+
+
+		
+			
+		
+			
+	<div class="widget">
+		<h4>Tag Cloud</h4>
+		<ul class="tag_box inline list-unstyled">		
+		
+			<li><a href="/tags/lang-regexp/">lang/regexp<span>1</span></a></li>
+		
+			<li><a href="/tags/os/">os<span>4</span></a></li>
+		
+			<li><a href="/tags/libs-svelte/">libs/svelte<span>1</span></a></li>
+		
+			<li><a href="/tags/lang-java/">lang/java<span>1</span></a></li>
+		
+			<li><a href="/tags/jinet/">jinet<span>1</span></a></li>
+		
+			<li><a href="/tags/cheatsheet/">cheatsheet<span>5</span></a></li>
+		
+			<li><a href="/tags/git/">git<span>1</span></a></li>
+		
+			<li><a href="/tags/lang-kotlin/">lang/kotlin<span>2</span></a></li>
+		
+			<li><a href="/tags/oneoverzero/">oneoverzero<span>1</span></a></li>
+		
+			<li><a href="/tags/lang-js/">lang/js<span>2</span></a></li>
+		
+			<li><a href="/tags/vscode/">vscode<span>1</span></a></li>
+		
+			<li><a href="/tags/frontend/">frontend<span>1</span></a></li>
+		
+			<li><a href="/tags/article/">article<span>3</span></a></li>
+		
+			<li><a href="/tags/startup/">startup<span>1</span></a></li>
+		
+			<li><a href="/tags/lang-swift/">lang/swift<span>2</span></a></li>
+		
+			<li><a href="/tags/charles/">charles<span>1</span></a></li>
+		
+		 
+		</ul>
+	</div>
+
+
+		
+			
+<div class="widget">
+  <h4>Recent Posts</h4>
+  <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2023/startup/" ><i class="fa fa-file-o"></i>Start up</a>
+      </li>
+    
+      <li>
+        <a href="/2022/kotlin-vs-java/" ><i class="fa fa-file-o"></i>Kotlin &amp; Java 语法对比</a>
+      </li>
+    
+      <li>
+        <a href="/2022/kotlin-learn/" ><i class="fa fa-file-o"></i>菜鸟《Kotlin 教程》笔记</a>
+      </li>
+    
+      <li>
+        <a href="/2022/swift-exp-collect/" ><i class="fa fa-file-o"></i>Swift 常见语法错误</a>
+      </li>
+    
+      <li>
+        <a href="/2022/swift-syntax/" ><i class="fa fa-file-o"></i>《Swift 核心技术与实现》— 01.语言基础</a>
+      </li>
+    
+      <li>
+        <a href="/2021/svelte-cheatsheet/" ><i class="fa fa-file-o"></i>Svelte Cheatsheet</a>
+      </li>
+    
+      <li>
+        <a href="/2022/frontend-engineer-tech-qa/" ><i class="fa fa-file-o"></i>前端工程师 Tech Q&amp;A</a>
+      </li>
+    
+      <li>
+        <a href="/2021/regular-expression-cheatsheet/" ><i class="fa fa-file-o"></i>Regular Expression Cheatsheet</a>
+      </li>
+    
+      <li>
+        <a href="/2021/mac-install/" ><i class="fa fa-file-o"></i>MacOS 装机 v1.0</a>
+      </li>
+    
+      <li>
+        <a href="/2021/unix-philosophy/" ><i class="fa fa-file-o"></i>Unix 哲学</a>
+      </li>
+    
+  </ul>
+</div>
+
+		
+			
+<div class="widget">
+	<h4>Links</h4>
+	<ul class="blogroll list-unstyled">
+	
+		<li><i class="fa fa-twitter"></i><a href="https://x.com/without_horn" title="Yalda's X repository." target="_blank">X(Twitter)</a></li>
+	
+		<li><i class="fa fa-github"></i><a href="http://www.github.com/guocaoyi" title="My Github account." target="_blank">Github</a></li>
+	
+	</ul>
+</div>
+
+
+		
+	</div> <!-- sidebar -->
+</div> <!-- col-md-3 -->
+
+	
+	
+</div> <!-- row-fluid -->
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+   &copy; 2015 - 2023 Yalda Guo 
+  <br />
+  Power by Hexo and Freemind.386
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  <a id="gotop" href="#">
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script>
+
+ 
+<script type="text/javascript">
+  var search_path = 'search.xml';
+  if (search_path.length == 0) {
+    search_path = 'search.xml';
+  }
+  var path = '/' + search_path;
+  searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
+
+
+</body>
+   </html>

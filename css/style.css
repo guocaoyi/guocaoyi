@@ -37,8 +37,7 @@ body {
 .page,
 .post {
   line-height: 1.5em;
-  font-family: DOS-en, DOS, SimHei, Monaco, Menlo, Consolas, 'Courier New',
-    monospace;
+  font-family: DOS-en, DOS, SimHei, Monaco, Menlo, Consolas, 'Courier New', monospace;
 }
 .page .more {
   text-pull: right;
@@ -52,7 +51,8 @@ body {
   border-bottom: 1px solid #fff;
 }
 .navbar-brand {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1),
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.1),
     0 0 30px rgba(255, 255, 255, 0.125);
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -60,7 +60,8 @@ body {
 }
 .navbar-brand:hover {
   text-decoration: none;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1),
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.1),
     0 0 30px rgba(255, 255, 255, 0.4);
 }
 .pagination {
@@ -171,8 +172,7 @@ a.label-anchor {
   text-align: right;
   width: 200px;
   left: -210px;
-  font-family: DOS-en, DOS, SimHei, Monaco, Menlo, Consolas, 'Courier New',
-    monospace;
+  font-family: DOS-en, DOS, SimHei, Monaco, Menlo, Consolas, 'Courier New', monospace;
 }
 a.label-anchor:target span {
   background-color: #b94a48;
@@ -210,8 +210,7 @@ blockquote ol,
 blockquote ul,
 blockquote li,
 .slogan {
-  font-family: DOS-en, DOS, SimHei, Monaco, Menlo, Consolas, 'Courier New',
-    monospace;
+  font-family: DOS-en, DOS, SimHei, Monaco, Menlo, Consolas, 'Courier New', monospace;
 }
 img,
 video {
@@ -301,8 +300,7 @@ h5,
 h6 {
   text-rendering: optimizelegibility;
   font-weight: bold;
-  font-family: DOS-en, DOS, SimHei, Monaco, Menlo, Consolas, 'Courier New',
-    monospace;
+  font-family: DOS-en, DOS, SimHei, Monaco, Menlo, Consolas, 'Courier New', monospace;
   color: #fff;
 }
 h2 {
@@ -353,8 +351,7 @@ h2 {
   font-size: 1.5em;
   line-height: 1.3em;
   font-weight: bold;
-  font-family: DOS-en, DOS, SimHei, Monaco, Menlo, Consolas, 'Courier New',
-    monospace;
+  font-family: DOS-en, DOS, SimHei, Monaco, Menlo, Consolas, 'Courier New', monospace;
 }
 .page h3.title div.article-title {
   width: 80%;

@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>Swift 常见语法错误 | Yalda</title>
+  <meta name="author" content="Yalda Guo">
+  
+  <meta name="description" content="Swift 常见语法错误
+无效的重复声明
+
+12345678let (_, errMsg) = httpError...let (_, errMsg) = httpError/**Error:Invalid redeclaration of ‘errMsg‘*/
+
+
+强制类型
+
+1234567var">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Swift 常见语法错误"/>
+  <meta property="og:site_name" content="Yalda"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- baidu analytics -->
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    // domain !== yalda.cn, return
+    if (window.location.hostname !== 'yalda.cn') return;
+
+    var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?b6ea6ca0c389aa294890b81f26dcc186';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+ 
+<!-- Google tag (gtag.js) -->
+
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-RGH70FJBTF"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-RGH70FJBTF');
+</script>
+
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Yalda</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> Swift 常见语法错误</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="Swift-常见语法错误"><a href="#Swift-常见语法错误" class="headerlink" title="Swift 常见语法错误"></a>Swift 常见语法错误</h1><ul>
+<li>无效的重复声明</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> (<span class="keyword">_</span>, errMsg) <span class="operator">=</span> httpError</span><br><span class="line"><span class="operator">...</span></span><br><span class="line"><span class="keyword">let</span> (<span class="keyword">_</span>, errMsg) <span class="operator">=</span> httpError</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">Error:</span></span><br><span class="line"><span class="comment">Invalid redeclaration of ‘errMsg‘</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>强制类型</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> notFountError <span class="operator">=</span> (<span class="number">404</span>, <span class="string">&quot;Not Found Error&quot;</span>)</span><br><span class="line">notFountError <span class="operator">=</span> (<span class="number">404</span>, <span class="string">&quot;Server Side&quot;</span>, <span class="string">&quot;Not Fount Error&quot;</span>, <span class="string">&quot;Http Error&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">Error:</span></span><br><span class="line"><span class="comment">Cannot assign value of type ‘(Int, String, String, String)’ to type</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>类型推导 &amp; 可选类型</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> catchphrase: <span class="type">String</span>?</span><br><span class="line">catchphrase <span class="operator">=</span> <span class="string">&quot;Hey guys, what&#x27;s up&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> count1: <span class="type">Int</span> <span class="operator">=</span> catchphrase.count</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">Error:</span></span><br><span class="line"><span class="comment">Value of optional type &#x27;String?&#x27; must be unwrapped to refer to member &#x27;count&#x27; of wrapped base type &#x27;String&#x27;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Fixed:</span></span><br><span class="line"><span class="keyword">let</span> count1: <span class="type">Int</span>? <span class="operator">=</span> catchphrase<span class="operator">?</span>.count</span><br><span class="line">or</span><br><span class="line"><span class="keyword">var</span> count1 <span class="operator">=</span>. catchphrase<span class="operator">?</span>.count</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>语法错误，for-in 语句</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> index <span class="number">1</span><span class="operator">...</span><span class="number">5</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">Error:</span></span><br><span class="line"><span class="comment">Expected &#x27;in&#x27; after for-each pattern</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Fixed:</span></span><br><span class="line"><span class="keyword">for</span> index <span class="keyword">in</span> <span class="number">1</span><span class="operator">...</span><span class="number">5</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>immutable collection 不可变</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> immutableArray: [<span class="type">String</span>] <span class="operator">=</span> [<span class="string">&quot;a1&quot;</span>, <span class="string">&quot;a2&quot;</span>]</span><br><span class="line">immutableArray.insert(<span class="string">&quot;bb&quot;</span>, at: <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">Error:</span></span><br><span class="line"><span class="comment">Cannot use mutating member on immutable value: &#x27;immutableArray&#x27; is a &#x27;let&#x27; constant</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>类型推导 &amp; 可选类型</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mutatingDic <span class="operator">=</span> [<span class="string">&quot;name&quot;</span>: <span class="string">&quot;yuntianming&quot;</span>, <span class="string">&quot;age&quot;</span>: <span class="string">&quot;29&quot;</span>]</span><br><span class="line"><span class="keyword">var</span> yAge: <span class="type">String</span> <span class="operator">=</span> mutatingDic[<span class="string">&quot;age&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">Error:</span></span><br><span class="line"><span class="comment">Value of optional type &#x27;String?&#x27; must be unwrapped to a value of type &#x27;String&#x27;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>方法只有在单执行语句时，才不需要 <code>return</code> 关键字</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">func</span> <span class="title function_">multipyExp</span>(<span class="params">x</span>: <span class="type">Int</span>,<span class="params">y</span>: <span class="type">Int</span>) -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;x <span class="subst">\(x)</span>&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;y <span class="subst">\(y)</span>&quot;</span>)</span><br><span class="line">    x <span class="operator">+</span> y</span><br><span class="line">&#125;</span><br><span class="line">multipyExp(x: <span class="number">11</span>, y: <span class="number">99</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">Error:</span></span><br><span class="line"><span class="comment">Missing return in a function expected to return &#x27;Int&#x27;; did you mean to return the last expression?</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>函数参数位置问题</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">func</span> <span class="title function_">addx1</span>(<span class="params">x</span> :<span class="type">Int</span>,<span class="params">y</span> :<span class="type">Int</span>) -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">    x<span class="operator">*</span><span class="number">10</span> <span class="operator">+</span> y</span><br><span class="line">&#125;</span><br><span class="line">addx(y: <span class="number">1</span>, x: <span class="number">6</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">Error:</span></span><br><span class="line"><span class="comment">Argument &#x27;x&#x27; must precede argument &#x27;y&#x27;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Final Class 不可被继承</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">final class Child: Person &#123;&#125;</span><br><span class="line"></span><br><span class="line">class Children: Child&#123;</span><br><span class="line">    override var isHappy: Bool&#123;</span><br><span class="line">        return false</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line">Error:</span><br><span class="line">Inheritance from a final class &#x27;Child&#x27;</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>构造器参数标注丢失</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ios</span>: <span class="title class_">ModeOfTransportation</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> wheels: <span class="type">Int</span></span><br><span class="line">    <span class="keyword">init</span>(<span class="params">name</span>: <span class="type">String</span>, <span class="params">wheels</span>: <span class="type">Int</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.wheels <span class="operator">=</span> wheels</span><br><span class="line">        <span class="keyword">super</span>.<span class="keyword">init</span>(name: name)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="keyword">convenience</span> <span class="keyword">init</span>(<span class="params">name</span>: <span class="type">String</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.<span class="keyword">init</span>(name: name, wheels: <span class="number">4</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> lang <span class="operator">=</span> <span class="type">ModeOfTransportation</span>(<span class="string">&quot;python&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(lang.name)</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">Error:</span></span><br><span class="line"><span class="comment">Missing argument label &#x27;name:&#x27; in call</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>空集合字面量生成时，明确类型</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array <span class="operator">=</span> []</span><br><span class="line"></span><br><span class="line"><span class="type">Error</span>:</span><br><span class="line">empty collection literal requires an explicit type</span><br><span class="line"></span><br><span class="line"><span class="type">Fixed</span>:</span><br><span class="line"><span class="keyword">let</span> array: [<span class="type">Int</span>] <span class="operator">=</span> []</span><br><span class="line"><span class="keyword">var</span> arrayStr: [<span class="type">String</span>] <span class="operator">=</span> []</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Let 定义常量不可变</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> age <span class="operator">=</span> <span class="number">10</span></span><br><span class="line">age <span class="operator">=</span> <span class="number">9</span></span><br><span class="line"></span><br><span class="line"><span class="type">Error</span>:</span><br><span class="line">cannot assign to value: &#x27;age&#x27; <span class="keyword">is</span> a &#x27;<span class="keyword">let</span>&#x27; constant</span><br></pre></td></tr></table></figure>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a href="/2022/kotlin-learn/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2022/swift-syntax/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+</section>
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2022-01-29 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/lang-swift/">lang/swift<span>2</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+   &copy; 2015 - 2023 Yalda Guo 
+  <br />
+  Power by Hexo and Freemind.386
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  <a id="gotop" href="#">
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script>
+
+ 
+<script type="text/javascript">
+  var search_path = 'search.xml';
+  if (search_path.length == 0) {
+    search_path = 'search.xml';
+  }
+  var path = '/' + search_path;
+  searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
+
+
+</body>
+   </html>

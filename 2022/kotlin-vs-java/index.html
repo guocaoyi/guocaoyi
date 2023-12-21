@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>Kotlin &amp; Java 语法对比 | Yalda</title>
+  <meta name="author" content="Yalda Guo">
+  
+  <meta name="description" content="Kotlin &amp;amp; Java 语法对比null safe1val userName = a?.b?.c?.d ?: &amp;quot;&amp;quot;
+
+对象实例化12class User(val name: String, val age: Int)val user = User(&amp;quot;yald">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Kotlin &amp; Java 语法对比"/>
+  <meta property="og:site_name" content="Yalda"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<!-- baidu analytics -->
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    // domain !== yalda.cn, return
+    if (window.location.hostname !== 'yalda.cn') return;
+
+    var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?b6ea6ca0c389aa294890b81f26dcc186';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+ 
+<!-- Google tag (gtag.js) -->
+
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-RGH70FJBTF"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-RGH70FJBTF');
+</script>
+
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Yalda</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> Kotlin &amp; Java 语法对比</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="Kotlin-Java-语法对比"><a href="#Kotlin-Java-语法对比" class="headerlink" title="Kotlin &amp; Java 语法对比"></a>Kotlin &amp; Java 语法对比</h1><h2 id="null-safe"><a href="#null-safe" class="headerlink" title="null safe"></a>null safe</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> userName = a?.b?.c?.d ?: <span class="string">&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="对象实例化"><a href="#对象实例化" class="headerlink" title="对象实例化"></a>对象实例化</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">User</span>(<span class="keyword">val</span> name: String, <span class="keyword">val</span> age: <span class="built_in">Int</span>)</span><br><span class="line"><span class="keyword">val</span> user = User(<span class="string">&quot;yalda&quot;</span>, <span class="number">31</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">	<span class="keyword">private</span> String name;</span><br><span class="line">	<span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">User</span><span class="params">(String name, <span class="type">int</span> age)</span> &#123;</span><br><span class="line">		<span class="built_in">this</span>.name = name;</span><br><span class="line">		<span class="built_in">this</span>.age = age;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// main</span></span><br><span class="line"><span class="type">User</span> <span class="variable">user</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">User</span>(<span class="string">&quot;xxx&quot;</span>, <span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="属性访问"><a href="#属性访问" class="headerlink" title="属性访问"></a>属性访问</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">	<span class="keyword">val</span> name: String? = <span class="literal">null</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">	<span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> name;</span><br><span class="line"> 	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setName</span><span class="params">(String name)</span> &#123;</span><br><span class="line">		<span class="built_in">this</span>.name = name;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="默认的构造函数"><a href="#默认的构造函数" class="headerlink" title="默认的构造函数"></a>默认的构造函数</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">User</span>(<span class="keyword">var</span> name: String)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">User</span><span class="params">(String name)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> name.toUpperCase();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setName</span><span class="params">(String name)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name.toUpperCase();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="快输创建-List-Map-集合类型"><a href="#快输创建-List-Map-集合类型" class="headerlink" title="快输创建 List&#x2F;Map 集合类型"></a>快输创建 List&#x2F;Map 集合类型</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// list</span></span><br><span class="line"><span class="keyword">val</span> list = listOf(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>) <span class="comment">// 不可变</span></span><br><span class="line"><span class="keyword">val</span> mlist = mutableListOf(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>) <span class="comment">// 可变</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// map</span></span><br><span class="line"><span class="keyword">val</span> map = mapOf(<span class="string">&quot;a&quot;</span> to <span class="string">&quot;aa&quot;</span>, <span class="string">&quot;b&quot;</span> to <span class="string">&quot;bb&quot;</span>) <span class="comment">// 不可变</span></span><br><span class="line"><span class="keyword">val</span> mmap = mutableMapOf(<span class="string">&quot;a&quot;</span> to <span class="string">&quot;aa&quot;</span>, <span class="string">&quot;b&quot;</span> to <span class="string">&quot;bb&quot;</span>) <span class="comment">// 可变</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// list</span></span><br><span class="line"><span class="type">ArrayList</span> <span class="variable">list</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>();</span><br><span class="line">list.add(<span class="number">0</span>);</span><br><span class="line">list.add(<span class="number">1</span>);</span><br><span class="line">list.add(<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line">Map&lt;String, String&gt; map = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;String, String&gt;();</span><br><span class="line">map.put(<span class="string">&quot;key1&quot;</span>, <span class="string">&quot;a&quot;</span>);</span><br><span class="line">map.put(<span class="string">&quot;key2&quot;</span>, <span class="string">&quot;b&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="对象属性调用（with-apply-let）"><a href="#对象属性调用（with-apply-let）" class="headerlink" title="对象属性调用（with\apply\let）"></a>对象属性调用（with\apply\let）</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> user = User()</span><br><span class="line">with (user) &#123;</span><br><span class="line">	name = <span class="string">&quot;yalda&quot;</span></span><br><span class="line">	age = <span class="number">10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">User</span> <span class="variable">user</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">User</span>();</span><br><span class="line">user.setName(<span class="string">&quot;yalda&quot;</span>);</span><br><span class="line">user.setAge(<span class="number">10</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="Android-自动绑定-XML-文件控件定义"><a href="#Android-自动绑定-XML-文件控件定义" class="headerlink" title="Android 自动绑定 XML 文件控件定义"></a>Android 自动绑定 XML 文件控件定义</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> kotlinx.android.synthetic.main.activity_main.*</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MainActivity</span> : <span class="type">AppCompatActivity</span>() &#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreate</span><span class="params">(savedInstanceState: <span class="type">Bundle</span>?)</span></span> &#123;</span><br><span class="line">        .....</span><br><span class="line">        textView.text = <span class="string">&quot;hello&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="简化-Parcelable-实现"><a href="#简化-Parcelable-实现" class="headerlink" title="简化 Parcelable 实现"></a>简化 Parcelable 实现</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> android.os.parcelable</span><br><span class="line"><span class="keyword">import</span> kotlinx.android.parcel.Parcelize</span><br><span class="line"></span><br><span class="line"><span class="meta">@Parcelize</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">User</span>(<span class="keyword">var</span> age: <span class="built_in">Int</span>, <span class="keyword">var</span> name: String): Parcelable</span><br></pre></td></tr></table></figure>
+
+<h2 id="协程-coroutines"><a href="#协程-coroutines" class="headerlink" title="协程 coroutines"></a>协程 coroutines</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">GlobalScope.launch &#123;</span><br><span class="line">	doSomething()</span><br><span class="line">	withContext(Dispatchers.Main) &#123;</span><br><span class="line">		textView.text = <span class="string">&quot;coroutines done&quot;</span></span><br><span class="line">		Toast.makeText(<span class="keyword">this</span><span class="symbol">@MainActivity</span>, <span class="string">&quot;coroutines hooray&quot;</span>, Toast.LENGTH_SHORT).show()</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="简化单例（类似与-Swift-的-struct）"><a href="#简化单例（类似与-Swift-的-struct）" class="headerlink" title="简化单例（类似与 Swift 的 struct）"></a>简化单例（类似与 Swift 的 struct）</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">object</span> User &#123;</span><br><span class="line">	<span class="function"><span class="keyword">fun</span> <span class="title">test</span><span class="params">()</span></span> &#123; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">User</span> <span class="variable">instance</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">User</span>();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">test</span><span class="params">()</span> &#123;&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> User <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> instance;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">private</span> <span class="title function_">User</span><span class="params">()</span> &#123;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用字符串模板简化字符串操作"><a href="#使用字符串模板简化字符串操作" class="headerlink" title="使用字符串模板简化字符串操作"></a>使用字符串模板简化字符串操作</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">getInfo</span><span class="params">()</span></span>:String = <span class="string">&quot;&gt;&gt; <span class="variable">$name</span>; and age is <span class="subst">$&#123;age&#125;</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">getInfo</span><span class="params">()</span> &#123;</span><br><span class="line">	<span class="type">String</span> <span class="variable">info</span> <span class="operator">=</span> <span class="string">&quot;&gt;&gt;&quot;</span> + <span class="built_in">this</span>.name + <span class="string">&quot;; and age is&quot;</span> + <span class="built_in">this</span>.age;</span><br><span class="line">	<span class="keyword">return</span> info;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用-when-替代-switch-case"><a href="#使用-when-替代-switch-case" class="headerlink" title="使用 when 替代 switch &amp; case"></a>使用 when 替代 switch &amp; case</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> id = <span class="number">1</span></span><br><span class="line"><span class="keyword">when</span>(id) &#123;</span><br><span class="line">	<span class="number">1</span> -&gt; println(<span class="string">&quot;is one&quot;</span>)</span><br><span class="line">	<span class="number">2</span> -&gt; println(<span class="string">&quot;is two&quot;</span>)</span><br><span class="line">	<span class="keyword">else</span> -&gt; &#123;</span><br><span class="line">		println(<span class="string">&quot;is not one and two&quot;</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">id</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">switch</span>(id) &#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">		System.out.println(<span class="string">&quot;is one&quot;</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;is two&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">default</span>:</span><br><span class="line">		System.out.println(<span class="string">&quot;is not one and two&quot;</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="解构对象（Destructing-declarations）类似-JS-中的-rest"><a href="#解构对象（Destructing-declarations）类似-JS-中的-rest" class="headerlink" title="解构对象（Destructing declarations）类似 JS 中的 rest"></a>解构对象（Destructing declarations）类似 JS 中的 rest</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">data</span> <span class="keyword">class</span> <span class="title class_">User</span>(<span class="keyword">val</span> userName: String, <span class="keyword">val</span> age: <span class="built_in">Int</span>)</span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="keyword">val</span> user = User(<span class="string">&quot;yalda&quot;</span>, <span class="number">31</span>)</span><br><span class="line">	<span class="keyword">val</span> (userName, age) = user</span><br><span class="line">	println(<span class="string">&quot;name: <span class="variable">$userName</span>, age: <span class="variable">$age</span>&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a href="/2023/startup/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2022/kotlin-learn/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+</section>
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2022-05-19 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/lang-kotlin/">lang/kotlin<span>2</span></a></li> <li><a href="/tags/lang-java/">lang/java<span>1</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+   &copy; 2015 - 2023 Yalda Guo 
+  <br />
+  Power by Hexo and Freemind.386
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  <a id="gotop" href="#">
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script>
+
+ 
+<script type="text/javascript">
+  var search_path = 'search.xml';
+  if (search_path.length == 0) {
+    search_path = 'search.xml';
+  }
+  var path = '/' + search_path;
+  searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
+
+
+</body>
+   </html>
