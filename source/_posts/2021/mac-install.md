@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MacOS 装机 v1.0
+title: MacOS 装机
 date: 2021-02-20 12:49:06
 tags:
   - article
@@ -8,7 +8,7 @@ tags:
 auther: guocaoyi
 ---
 
-# MacOS 装机 v1.0
+# MacOS 装机
 
 > 「Level ｜ Type ｜ Origin」：建议程度｜类型｜安装源
 
