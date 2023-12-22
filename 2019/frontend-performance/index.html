@@ -6,7 +6,7 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Start up | Yalda&#39;s blogs</title>
+  <title>前端性能优化 | Yalda&#39;s blogs</title>
   <meta name="author" content="Yalda Guo">
   
   <meta name="description" content="sxx">
@@ -14,7 +14,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Start up"/>
+  <meta property="og:title" content="前端性能优化"/>
   <meta property="og:site_name" content="Yalda&#39;s blogs"/>
 
   
@@ -115,7 +115,7 @@
 
 	
 		<div class="page-header">
-			<h1> Start up</h1>
+			<h1> 前端性能优化</h1>
 		</div>
 	
 
@@ -132,7 +132,116 @@
 	<div class="mypage">		
 	  		
 
-	  <h1 id="Start-up-on-OneOverZero"><a href="#Start-up-on-OneOverZero" class="headerlink" title="Start up on OneOverZero"></a>Start up on OneOverZero</h1><h2 id="1-Create-a-new-repository-on-GitHub"><a href="#1-Create-a-new-repository-on-GitHub" class="headerlink" title="1. Create a new repository on GitHub"></a>1. Create a new repository on GitHub</h2>	  
+	  <h1 id="前端性能优化"><a href="#前端性能优化" class="headerlink" title="前端性能优化"></a>前端性能优化</h1><ul>
+<li>前端性能优化<ul>
+<li>移动端<ul>
+<li>保持单个文件小于25KB</li>
+<li>打包内容为分段multipar文档</li>
+</ul>
+</li>
+<li>图片<ul>
+<li>优化图片</li>
+<li>优化CSS Sprite</li>
+<li>不要在HTML中缩放图片</li>
+<li>使用体积小、可缓存的 favicon.ico</li>
+</ul>
+</li>
+<li>渲染层面<ul>
+<li>服务端渲染的探索和实践</li>
+<li>浏览器的渲染机制解析<ul>
+<li>CSS性能方案</li>
+<li>JS性能方案</li>
+</ul>
+</li>
+<li>DOM优化<ul>
+<li>原理与基本思路</li>
+<li>事件循环与异步更新</li>
+<li>回流与重绘</li>
+</ul>
+</li>
+<li>首屏渲染提速<ul>
+<li>懒加载初探</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>页面内容<ul>
+<li>减少HTTP请求数</li>
+<li>减少DNS查询</li>
+<li>避免重定向</li>
+<li>缓存Ajax请求</li>
+<li>延迟加载</li>
+<li>预加载</li>
+<li>减少DOM元素数量</li>
+<li>划分内容到不用域名</li>
+<li>尽量减少iframe使用</li>
+<li>避免404错误</li>
+</ul>
+</li>
+<li>服务器<ul>
+<li>使用CDN</li>
+<li>添加Expires或Cache-Control响应头</li>
+<li>启用Gzip</li>
+<li>配置Etag</li>
+<li>尽早输出缓冲</li>
+<li>Ajax请求使用GET方法</li>
+<li>避免图片src为空</li>
+</ul>
+</li>
+<li>Cookie<ul>
+<li>减少Cookie大小</li>
+<li>静态资源使用Cookie域名</li>
+</ul>
+</li>
+<li>CSS<ul>
+<li>样式表放在<head/>中</li>
+<li>不要使用CSS表达式</li>
+<li>使用<link/>替代@import</li>
+<li>不要使用filter</li>
+</ul>
+</li>
+<li>Javascript<ul>
+<li>把脚本放在页面底部</li>
+<li>使用外部Javascript&amp;CSS</li>
+<li>压缩Javascript&amp;CSS</li>
+<li>移除重复脚本</li>
+<li>减少DOM操作</li>
+<li>使用高效的事件处理</li>
+</ul>
+</li>
+<li>网络层<ul>
+<li>请求过程的优化<ul>
+<li>HTTP请求优化<ul>
+<li>构建工具性能调优</li>
+<li>Gzip压缩原理</li>
+<li>图片优化</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>减少网路请求<ul>
+<li>本地存储（存储篇）<ul>
+<li>浏览器的缓存机制</li>
+<li>利离线存储技术</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>性能检测<ul>
+<li>可视化工具<ul>
+<li>Performance</li>
+<li>LightHouse</li>
+</ul>
+</li>
+<li>W3C性能API</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+	  
 	</div>
 
 	<div>
@@ -141,12 +250,13 @@
 
     
     
-    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
+    <a href="/2020/command-line-for-macos/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2022/kotlin-vs-java/" type="button" class="btn btn-default ">Next<i
+    <a href="/2019/frontend-standard/" type="button" class="btn btn-default ">Next<i
                 class="fa fa-arrow-circle-o-right"></i></a>
     
 
@@ -175,7 +285,7 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2023-03-09 
+	2019-12-20 
 	</div>
 	
 
@@ -188,7 +298,7 @@
 	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
     <ul id="tags" class="tag_box list-unstyled collapse in">	  
 	    
-  <li><a href="/tags/startup/">startup<span>1</span></a></li> <li><a href="/tags/oneoverzero/">oneoverzero<span>1</span></a></li> <li><a href="/tags/jinet/">jinet<span>1</span></a></li>
+  <li><a href="/tags/frontend/">frontend<span>4</span></a></li>
     </ul>
 	</div>
 		
