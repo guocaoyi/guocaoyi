@@ -1,9 +1,10 @@
 ---
 layout: post
 title: 如何成为更好的面试官
-date: 2021-11-22
+date: 2022-06-22
 tags:
   - interview
+  - insight
 ---
 
 # 如何成为更好的面试官
